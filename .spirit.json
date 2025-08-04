@@ -1,5 +1,11 @@
 {
   "mood": "productive",
-  "last_utterance": "効率よく作業が進んでいますね",
-  "last_updated": "2025-08-04T15:20:16.988811Z"
+  "lastMessage": "効率よく作業が進んでいますね",
+  "lastUpdated": "2025-08-04T15:22:50.947874Z",
+  "profile": {
+    "name": "Kaze-no-Kami",
+    "element": "wind",
+    "age": 231,
+    "personality": "gentle and wise"
+  }
 }
