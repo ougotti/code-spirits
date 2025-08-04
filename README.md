@@ -5,15 +5,16 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: excited
+**気分**: calm
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 新しい力が宿った！
+> バグが消えて静けさが戻った。
 <!-- SPIRIT_LOG_END -->
 
 ---
 
 精霊は毎日0時と、コードが更新されるたびに新しい言葉を紡ぎます。
+# Testing fallback behavior
