@@ -17,13 +17,33 @@ def load_spirit_data():
     spirit_file = '.spirit.json'
     if os.path.exists(spirit_file):
         with open(spirit_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            # Handle migration from old field names to new camelCase names
+            if "last_utterance" in data:
+                data["lastMessage"] = data.pop("last_utterance")
+            if "last_updated" in data:
+                data["lastUpdated"] = data.pop("last_updated")
+            # Ensure profile exists
+            if "profile" not in data:
+                data["profile"] = {
+                    "name": "Kaze-no-Kami",
+                    "element": "wind",
+                    "age": 231,
+                    "personality": "gentle and wise"
+                }
+            return data
     else:
         # Default data
         return {
             "mood": "neutral",
-            "last_utterance": "まだ何も語っていません…",
-            "last_updated": datetime.datetime.now().isoformat() + "Z"
+            "lastMessage": "まだ何も語っていません…",
+            "lastUpdated": datetime.datetime.now().isoformat() + "Z",
+            "profile": {
+                "name": "Kaze-no-Kami",
+                "element": "wind",
+                "age": 231,
+                "personality": "gentle and wise"
+            }
         }
 
 
@@ -193,8 +213,8 @@ def main():
     
     # Update spirit data
     spirit_data['mood'] = new_mood
-    spirit_data['last_utterance'] = new_utterance
-    spirit_data['last_updated'] = datetime.datetime.now().isoformat() + "Z"
+    spirit_data['lastMessage'] = new_utterance
+    spirit_data['lastUpdated'] = datetime.datetime.now().isoformat() + "Z"
     
     # Save updated data
     save_spirit_data(spirit_data)
