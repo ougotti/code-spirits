@@ -5,13 +5,13 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: focused
+**気分**: productive
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 今こそ力を発揮する時です💪
+> 効率よく作業が進んでいますね
 <!-- SPIRIT_LOG_END -->
 
 ---
