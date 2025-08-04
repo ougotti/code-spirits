@@ -5,13 +5,13 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: neutral
+**気分**: focused
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> バランスの取れた状態です
+> 今こそ力を発揮する時です💪
 <!-- SPIRIT_LOG_END -->
 
 ---
