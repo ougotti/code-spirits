@@ -1,0 +1,20 @@
+name: 精霊にお願いをする
+description: 精霊にメッセージをお願いできるテンプレートです
+title: "精霊にお願いをする"
+labels: ["spirit-message"]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: prompt
+      description: 精霊にお願いしたいメッセージの内容を記載してください
+      placeholder: 最近元気がないので励ますメッセージにしてください
+      value: ""
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        このお願いを送信すると、精霊があなたのリクエストに応じて新しいメッセージを紡いでくれます 🌟
