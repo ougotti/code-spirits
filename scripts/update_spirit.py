@@ -9,6 +9,7 @@ import datetime
 import random
 import re
 import os
+import subprocess
 
 
 def load_spirit_data():
@@ -40,6 +41,38 @@ def get_mood_based_on_time():
         moods = ["sleepy", "mysterious", "dreamy"]
     
     return random.choice(moods)
+
+
+def get_latest_commit_message():
+    """Get the latest commit message from git repository"""
+    try:
+        result = subprocess.run(
+            ['git', 'log', '-1', '--pretty=format:%s'],
+            capture_output=True,
+            text=True,
+            cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except (subprocess.SubprocessError, FileNotFoundError):
+        pass
+    return None
+
+
+def get_mood_based_on_commit():
+    """Determine mood based on latest commit message"""
+    commit_message = get_latest_commit_message()
+    if not commit_message:
+        return None
+    
+    commit_message_lower = commit_message.lower()
+    
+    if 'fix' in commit_message_lower:
+        return "calm"
+    elif 'feat' in commit_message_lower:
+        return "excited"
+    
+    return None
 
 
 def get_utterance_for_mood(mood):
@@ -104,6 +137,12 @@ def get_utterance_for_mood(mood):
             "夢のような時間ですね",
             "想像力が広がります💭",
             "幻想的な雰囲気です🌟"
+        ],
+        "calm": [
+            "バグが消えて静けさが戻った。"
+        ],
+        "excited": [
+            "新しい力が宿った！"
         ]
     }
     
@@ -145,8 +184,11 @@ def main():
     # Load current spirit data
     spirit_data = load_spirit_data()
     
-    # Get new mood and utterance
-    new_mood = get_mood_based_on_time()
+    # Try to get mood based on commit first, then fall back to time-based
+    new_mood = get_mood_based_on_commit()
+    if new_mood is None:
+        new_mood = get_mood_based_on_time()
+    
     new_utterance = get_utterance_for_mood(new_mood)
     
     # Update spirit data
