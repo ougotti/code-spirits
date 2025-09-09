@@ -5,13 +5,13 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: sleepy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢の世界へ誘われています😴
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ---
