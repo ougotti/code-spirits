@@ -13,9 +13,7 @@ import sys
 import subprocess
 import urllib.request
 import urllib.error
-import xml.etree.ElementTree as ET
-import time
-import functools
+import defusedxml.ElementTree as ET
 
 
 # ニュースソース定義 (あとから追加可能)
