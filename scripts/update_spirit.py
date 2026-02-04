@@ -11,6 +11,7 @@ import re
 import os
 import subprocess
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 
 
@@ -125,8 +126,8 @@ def fetch_news(feeds=None):
             count = 0
             max_items = feed.get("max_items", 3)
 
-            # First, try RSS 2.0 style <item> elements.
-            rss_items = list(root.iter("item"))
+            # First, try RSS 2.0 style <channel>/<item> elements.
+            rss_items = root.findall(".//channel/item")
             if rss_items:
                 for item in rss_items:
                     title_el = item.find("title")
@@ -171,8 +172,14 @@ def fetch_news(feeds=None):
                     count += 1
                     if count >= max_items:
                         break
+        except urllib.error.URLError as e:
+            print(f"ニュースの取得に失敗 (ネットワークエラー: {feed.get('name', feed['url'])}): {e}")
+            continue
+        except ET.ParseError as e:
+            print(f"ニュースの取得に失敗 (XML解析エラー: {feed.get('name', feed['url'])}): {e}")
+            continue
         except Exception as e:
-            print(f"ニュースの取得に失敗 ({feed.get('name', feed['url'])}): {e}")
+            print(f"ニュースの取得に失敗 (予期しないエラー: {feed.get('name', feed['url'])}): {e}")
             continue
 
     return articles
@@ -334,63 +341,66 @@ def generate_news_comment(mood, profile, news_items):
         if not choices:
             print("GitHub Models API: レスポンスに choices がありません")
             return fallback
-        return choices[0]["message"]["content"].strip()
+        content = choices[0].get("message", {}).get("content")
+        if not content:
+            print("GitHub Models API: レスポンスに message.content がありません")
+            return fallback
+        return content.strip()
     except Exception as e:
         print(f"GitHub Models API の呼び出しに失敗: {e}")
         return fallback
 
 
-def update_readme(mood, utterance):
-    """Update README.md with new spirit status and utterance"""
+def _escape_md_link(text):
+    """Escape markdown special characters in link text."""
+    return text.replace("[", "\\[").replace("]", "\\]")
+
+
+def update_readme(mood, utterance, news_items=None, news_comment=""):
+    """Update all dynamic sections of README.md in a single read/write cycle."""
     readme_path = 'README.md'
-    
+
     if not os.path.exists(readme_path):
         return
-    
+
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # Update spirit status
+
+    # --- Spirit status ---
     status_pattern = r'(<!-- SPIRIT_STATUS_START -->)(.*?)(<!-- SPIRIT_STATUS_END -->)'
     new_status = f'<!-- SPIRIT_STATUS_START -->\n**気分**: {mood}\n<!-- SPIRIT_STATUS_END -->'
     content = re.sub(status_pattern, new_status, content, flags=re.DOTALL)
-    
-    # Update spirit log
+
+    # --- Spirit log ---
     log_pattern = r'(<!-- SPIRIT_LOG_START -->)(.*?)(<!-- SPIRIT_LOG_END -->)'
     new_log = f'<!-- SPIRIT_LOG_START -->\n> {utterance}\n<!-- SPIRIT_LOG_END -->'
     content = re.sub(log_pattern, new_log, content, flags=re.DOTALL)
-    
-    with open(readme_path, 'w', encoding='utf-8') as f:
-        f.write(content)
 
+    # --- News ---
+    if news_items is None:
+        news_items = []
 
-def update_readme_news(news_items, news_comment):
-    """Update README.md with the news section."""
-    readme_path = 'README.md'
-    if not os.path.exists(readme_path):
-        return
-
-    with open(readme_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # ニュースコンテンツを構築
     if news_items:
         lines = []
         if news_comment:
-            lines.append(f"> {news_comment}")
+            for bq_line in news_comment.splitlines():
+                lines.append(f"> {bq_line}" if bq_line.strip() else ">")
             lines.append("")
         for article in news_items:
-            if article.get("link"):
-                lines.append(f"- [{article['title']}]({article['link']}) ({article['source']})")
+            title = _escape_md_link(article['title'])
+            link = article.get("link", "")
+            # Escape parentheses in URLs to avoid breaking markdown links
+            safe_link = link.replace("(", "%28").replace(")", "%29") if link else ""
+            if safe_link:
+                lines.append(f"- [{title}]({safe_link}) ({article['source']})")
             else:
-                lines.append(f"- {article['title']} ({article['source']})")
+                lines.append(f"- {title} ({article['source']})")
         news_body = "\n".join(lines)
     else:
         news_body = "> ニュースを取得できませんでした..."
 
     new_section = f"<!-- SPIRIT_NEWS_START -->\n{news_body}\n<!-- SPIRIT_NEWS_END -->"
 
-    # マーカーが既にあれば置換、なければ --- の前に挿入
     news_pattern = r'<!-- SPIRIT_NEWS_START -->.*?<!-- SPIRIT_NEWS_END -->'
     if re.search(news_pattern, content, flags=re.DOTALL):
         content = re.sub(news_pattern, new_section, content, flags=re.DOTALL)
@@ -439,9 +449,8 @@ def main():
     # Save updated data
     save_spirit_data(spirit_data)
 
-    # Update README
-    update_readme(new_mood, new_utterance)
-    update_readme_news(news_items, news_comment)
+    # Update README (single read/write for all sections)
+    update_readme(new_mood, new_utterance, news_items, news_comment)
 
     print(f"精霊の状態を更新しました: {new_mood} - {new_utterance}")
     if news_items:
