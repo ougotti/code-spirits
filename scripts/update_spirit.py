@@ -346,6 +346,14 @@ def generate_news_comment(mood, profile, news_items):
             print("GitHub Models API: レスポンスに message.content がありません")
             return fallback
         return content.strip()
+    except urllib.error.HTTPError as e:
+        if e.code == 401 or e.code == 403:
+            print(f"GitHub Models API の呼び出しに失敗 (認証エラー: {e.code})")
+            print("ヒント: GITHUB_TOKENに 'models: read' 権限が必要です")
+            print("詳細: https://github.blog/changelog/2025-05-15-modelsread-now-required-for-github-models-access/")
+        else:
+            print(f"GitHub Models API の呼び出しに失敗 (HTTPエラー: {e.code} - {e.reason})")
+        return fallback
     except Exception as e:
         print(f"GitHub Models API の呼び出しに失敗: {e}")
         return fallback
