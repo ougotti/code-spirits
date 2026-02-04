@@ -406,12 +406,18 @@ def update_readme(mood, utterance, news_items=None, news_comment=""):
         content = re.sub(news_pattern, new_section, content, flags=re.DOTALL)
     else:
         insert = f"\n## 精霊が届けるニュース\n\n{new_section}\n"
-        sep_match = re.search(r'\n---\s*\n', content)
-        if sep_match:
-            pos = sep_match.start()
-            content = content[:pos] + insert + content[pos:]
+        # Prefer an explicit anchor comment if present, for robust placement.
+        anchor_match = re.search(r'<!--\s*SPIRIT_NEWS_ANCHOR\s*-->', content)
+        if anchor_match:
+            start, end = anchor_match.span()
+            content = content[:start] + insert + content[end:]
         else:
-            content += insert
+            sep_match = re.search(r'\n---\s*\n', content)
+            if sep_match:
+                pos = sep_match.start()
+                content = content[:pos] + insert + content[pos:]
+            else:
+                content += insert
 
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(content)
