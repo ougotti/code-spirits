@@ -439,7 +439,15 @@ def main():
     news_items = fetch_news()
     news_comment = generate_news_comment(new_mood, spirit_data["profile"], news_items)
 
-    # Update spirit data
+    # Update README first (single read/write for all sections)
+    # If this fails, we don't want to save the spirit data
+    try:
+        update_readme(new_mood, new_utterance, news_items, news_comment)
+    except Exception as e:
+        print(f"エラー: READMEの更新に失敗しました: {e}")
+        raise
+
+    # Only update spirit data if README update succeeded
     spirit_data['mood'] = new_mood
     spirit_data['lastMessage'] = new_utterance
     spirit_data['lastUpdated'] = datetime.datetime.now().isoformat() + "Z"
@@ -447,10 +455,13 @@ def main():
     spirit_data['newsComment'] = news_comment
 
     # Save updated data
-    save_spirit_data(spirit_data)
-
-    # Update README (single read/write for all sections)
-    update_readme(new_mood, new_utterance, news_items, news_comment)
+    try:
+        save_spirit_data(spirit_data)
+    except Exception as e:
+        print(f"エラー: .spirit.jsonの保存に失敗しました: {e}")
+        # At this point README is updated but .spirit.json failed
+        # This is less critical since the next run will sync them
+        raise
 
     print(f"精霊の状態を更新しました: {new_mood} - {new_utterance}")
     if news_items:
