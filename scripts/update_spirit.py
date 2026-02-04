@@ -289,6 +289,7 @@ def generate_news_comment(mood, profile, news_items):
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
+        print("GitHub Models API: GITHUB_TOKEN が設定されていないため、フォールバックコメントを使用します")
         return fallback
 
     name = profile.get("name", "精霊")
@@ -339,15 +340,17 @@ def generate_news_comment(mood, profile, news_items):
             result = json.loads(resp.read().decode("utf-8"))
         choices = result.get("choices")
         if not choices:
-            print("GitHub Models API: レスポンスに choices がありません")
+            print("GitHub Models API: レスポンスに choices がありません。フォールバックコメントを使用します")
             return fallback
         content = choices[0].get("message", {}).get("content")
         if not content:
-            print("GitHub Models API: レスポンスに message.content がありません")
+            print("GitHub Models API: レスポンスに message.content がありません。フォールバックコメントを使用します")
             return fallback
+        print("GitHub Models API: コメント生成に成功しました")
         return content.strip()
     except Exception as e:
-        print(f"GitHub Models API の呼び出しに失敗: {e}")
+        print(f"GitHub Models API の呼び出しに失敗しました: {e}")
+        print("フォールバックコメントを使用します")
         return fallback
 
 
