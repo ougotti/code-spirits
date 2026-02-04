@@ -9,9 +9,11 @@ import datetime
 import random
 import re
 import os
+import sys
 import subprocess
 import urllib.request
 import urllib.error
+import urllib.parse
 import xml.etree.ElementTree as ET
 
 
@@ -30,6 +32,130 @@ NEWS_FEEDS = [
     #     "max_items": 3,
     # },
 ]
+
+# リトライとキャッシュの設定
+MAX_RETRIES = 3
+RETRY_INITIAL_DELAY = 1  # 秒
+RETRY_MAX_DELAY = 10  # 秒
+RETRY_BACKOFF_MULTIPLIER = 2
+
+# キャッシュの有効期限（秒） - デフォルト1時間
+CACHE_TTL = 3600
+
+
+class APIValidationError(Exception):
+    """Exception raised when API response validation fails.
+    
+    This is a non-retryable error indicating the API returned
+    a response in an unexpected format.
+    """
+    pass
+
+
+def retry_with_backoff(max_retries=MAX_RETRIES, initial_delay=RETRY_INITIAL_DELAY,
+                       max_delay=RETRY_MAX_DELAY, multiplier=RETRY_BACKOFF_MULTIPLIER):
+    """Decorator to retry a function with exponential backoff.
+
+    Args:
+        max_retries: Maximum number of retry attempts
+        initial_delay: Initial delay in seconds before first retry
+        max_delay: Maximum delay between retries
+        multiplier: Multiplier for exponential backoff
+
+    Returns:
+        Decorated function that retries on exception
+    """
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            delay = initial_delay
+            last_exception = None
+
+            for attempt in range(max_retries + 1):
+                try:
+                    return func(*args, **kwargs)
+                except APIValidationError:
+                    # Don't retry API validation errors - they won't be fixed by retrying
+                    raise
+                except Exception as e:
+                    last_exception = e
+                    if attempt < max_retries:
+                        print(f"リトライ {attempt + 1}/{max_retries}: {func.__name__} - {e}")
+                        time.sleep(delay)
+                        delay = min(delay * multiplier, max_delay)
+                    else:
+                        print(f"最大リトライ回数に達しました: {func.__name__} - {e}")
+
+            # 全てのリトライが失敗した場合、最後の例外を再送出
+            raise last_exception
+
+        return wrapper
+    return decorator
+
+
+def get_cache_path():
+    """Get the path to the news cache file."""
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".news_cache.json")
+
+
+def load_news_cache():
+    """Load cached news items if they exist and are still valid.
+
+    Returns:
+        list of news articles or None if cache is invalid/expired
+    """
+    cache_path = get_cache_path()
+    if not os.path.exists(cache_path):
+        return None
+
+    try:
+        with open(cache_path, 'r', encoding='utf-8') as f:
+            cache_data = json.load(f)
+
+        # Check if timestamp exists
+        if "timestamp" not in cache_data:
+            print("キャッシュにタイムスタンプがありません")
+            return None
+
+        # Parse timestamp (may be timezone-aware or naive)
+        cached_time = datetime.datetime.fromisoformat(cache_data["timestamp"])
+        # Use timezone-naive datetime for consistency
+        if cached_time.tzinfo is not None:
+            cached_time = cached_time.replace(tzinfo=None)
+        
+        current_time = datetime.datetime.now()
+        age_seconds = (current_time - cached_time).total_seconds()
+
+        if age_seconds < CACHE_TTL:
+            print(f"キャッシュからニュースを読み込みました (有効期限まで残り {int(CACHE_TTL - age_seconds)} 秒)")
+            return cache_data.get("articles", [])
+        else:
+            print("キャッシュの有効期限が切れています")
+            return None
+
+    except (json.JSONDecodeError, ValueError, KeyError) as e:
+        print(f"キャッシュの読み込みに失敗: {e}")
+        return None
+
+
+def save_news_cache(articles):
+    """Save news articles to cache.
+
+    Args:
+        articles: list of news articles to cache
+    """
+    cache_path = get_cache_path()
+    cache_data = {
+        "timestamp": datetime.datetime.now().isoformat(),
+        "articles": articles
+    }
+
+    try:
+        with open(cache_path, 'w', encoding='utf-8') as f:
+            json.dump(cache_data, f, ensure_ascii=False, indent=2)
+        print(f"ニュースをキャッシュに保存しました ({len(articles)} 件)")
+    except Exception as e:
+        print(f"キャッシュの保存に失敗: {e}")
 
 
 def load_spirit_data():
@@ -99,88 +225,113 @@ def get_latest_commit_message():
     return None
 
 
-def fetch_news(feeds=None):
-    """Fetch news from RSS feeds.
+def fetch_news(feeds=None, use_cache=True):
+    """Fetch news from RSS feeds with caching and retry support.
 
     Args:
         feeds: list of feed dicts (default: NEWS_FEEDS).
                Each dict has 'name', 'url', and 'max_items'.
+        use_cache: whether to use cached results if available (default: True)
 
     Returns:
         list of {"source": str, "title": str, "link": str}
     """
+    # キャッシュから読み込みを試みる
+    if use_cache:
+        cached_articles = load_news_cache()
+        if cached_articles is not None:
+            return cached_articles
+
     if feeds is None:
         feeds = NEWS_FEEDS
 
     articles = []
     for feed in feeds:
         try:
-            req = urllib.request.Request(
-                feed["url"],
-                headers={"User-Agent": "CodeSpirits/1.0"},
-            )
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                xml_data = resp.read()
-
-            root = ET.fromstring(xml_data)
-            count = 0
-            max_items = feed.get("max_items", 3)
-
-            # First, try RSS 2.0 style <channel>/<item> elements.
-            rss_items = root.findall(".//channel/item")
-            if rss_items:
-                for item in rss_items:
-                    title_el = item.find("title")
-                    link_el = item.find("link")
-                    if title_el is None or not title_el.text:
-                        continue
-                    articles.append({
-                        "source": feed["name"],
-                        "title": title_el.text.strip(),
-                        "link": link_el.text.strip() if link_el is not None and link_el.text else "",
-                    })
-                    count += 1
-                    if count >= max_items:
-                        break
-            else:
-                # Fallback: try Atom feed (<entry> elements in Atom namespace).
-                atom_ns = "{http://www.w3.org/2005/Atom}"
-                for entry in root.findall(".//" + atom_ns + "entry"):
-                    title_el = entry.find(atom_ns + "title")
-                    if title_el is None or not title_el.text:
-                        continue
-
-                    # Prefer <link rel="alternate"> or a link without a rel attribute.
-                    link_el = None
-                    for candidate in entry.findall(atom_ns + "link"):
-                        rel = candidate.get("rel")
-                        if rel is None or rel == "alternate":
-                            link_el = candidate
-                            break
-
-                    link_href = ""
-                    if link_el is not None:
-                        href = link_el.get("href")
-                        if href:
-                            link_href = href.strip()
-
-                    articles.append({
-                        "source": feed["name"],
-                        "title": title_el.text.strip(),
-                        "link": link_href,
-                    })
-                    count += 1
-                    if count >= max_items:
-                        break
-        except urllib.error.URLError as e:
-            print(f"ニュースの取得に失敗 (ネットワークエラー: {feed.get('name', feed['url'])}): {e}")
-            continue
-        except ET.ParseError as e:
-            print(f"ニュースの取得に失敗 (XML解析エラー: {feed.get('name', feed['url'])}): {e}")
-            continue
+            articles.extend(_fetch_single_feed_with_retry(feed))
         except Exception as e:
-            print(f"ニュースの取得に失敗 (予期しないエラー: {feed.get('name', feed['url'])}): {e}")
+            # 個別のフィードのエラーはログに出力して続行
+            print(f"フィード取得失敗 (全リトライ失敗): {feed.get('name', feed['url'])}")
             continue
+
+    # 成功した場合のみキャッシュに保存
+    if articles:
+        save_news_cache(articles)
+
+    return articles
+
+
+@retry_with_backoff()
+def _fetch_single_feed_with_retry(feed):
+    """Fetch a single RSS feed with retry logic.
+
+    Args:
+        feed: dict with 'name', 'url', and 'max_items'
+
+    Returns:
+        list of articles from this feed
+
+    Raises:
+        Exception: if the fetch fails after all retries
+    """
+    articles = []
+    req = urllib.request.Request(
+        feed["url"],
+        headers={"User-Agent": "CodeSpirits/1.0"},
+    )
+    with urllib.request.urlopen(req, timeout=10) as resp:
+        xml_data = resp.read()
+
+    root = ET.fromstring(xml_data)
+    count = 0
+    max_items = feed.get("max_items", 3)
+
+    # First, try RSS 2.0 style <channel>/<item> elements.
+    rss_items = root.findall(".//channel/item")
+    if rss_items:
+        for item in rss_items:
+            title_el = item.find("title")
+            link_el = item.find("link")
+            if title_el is None or not title_el.text:
+                continue
+            articles.append({
+                "source": feed["name"],
+                "title": title_el.text.strip(),
+                "link": link_el.text.strip() if link_el is not None and link_el.text else "",
+            })
+            count += 1
+            if count >= max_items:
+                break
+    else:
+        # Fallback: try Atom feed (<entry> elements in Atom namespace).
+        atom_ns = "{http://www.w3.org/2005/Atom}"
+        for entry in root.findall(".//" + atom_ns + "entry"):
+            title_el = entry.find(atom_ns + "title")
+            if title_el is None or not title_el.text:
+                continue
+
+            # Prefer <link rel="alternate"> or a link without a rel attribute.
+            link_el = None
+            for candidate in entry.findall(atom_ns + "link"):
+                rel = candidate.get("rel")
+                if rel is None or rel == "alternate":
+                    link_el = candidate
+                    break
+
+            link_href = ""
+            if link_el is not None:
+                href = link_el.get("href")
+                if href:
+                    link_href = href.strip()
+
+            articles.append({
+                "source": feed["name"],
+                "title": title_el.text.strip(),
+                "link": link_href,
+            })
+            count += 1
+            if count >= max_items:
+                break
 
     return articles
 
@@ -289,8 +440,32 @@ def generate_news_comment(mood, profile, news_items):
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
+        print("GitHub Models API: GITHUB_TOKEN が設定されていないため、フォールバックコメントを使用します")
         return fallback
 
+    try:
+        return _generate_news_comment_with_retry(mood, profile, news_items, token)
+    except Exception as e:
+        print(f"GitHub Models API の呼び出しに失敗 (全リトライ失敗): {e}")
+        return fallback
+
+
+@retry_with_backoff()
+def _generate_news_comment_with_retry(mood, profile, news_items, token):
+    """Internal function to call GitHub Models API with retry logic.
+
+    Args:
+        mood: current mood
+        profile: spirit profile dict
+        news_items: list of news articles
+        token: GitHub token
+
+    Returns:
+        Generated comment string
+
+    Raises:
+        Exception: if the API call fails after all retries
+    """
     name = profile.get("name", "精霊")
     element = profile.get("element", "wind")
     age = profile.get("age", "不明")
@@ -397,8 +572,9 @@ def update_readme(mood, utterance, news_items=None, news_comment=""):
         for article in news_items:
             title = _escape_md_link(article['title'])
             link = article.get("link", "")
-            # Escape parentheses in URLs to avoid breaking markdown links
-            safe_link = link.replace("(", "%28").replace(")", "%29") if link else ""
+            # Properly encode URLs to avoid breaking markdown links
+            # Encode parentheses and brackets which can break markdown, but preserve URL structure
+            safe_link = urllib.parse.quote(link, safe=':/?#@!$&\'*+,;=') if link else ""
             if safe_link:
                 lines.append(f"- [{title}]({safe_link}) ({article['source']})")
             else:
@@ -453,7 +629,15 @@ def main():
     news_items = fetch_news()
     news_comment = generate_news_comment(new_mood, spirit_data["profile"], news_items)
 
-    # Update spirit data
+    # Update README first (single read/write for all sections)
+    # If this fails, we don't want to save the spirit data
+    try:
+        update_readme(new_mood, new_utterance, news_items, news_comment)
+    except Exception as e:
+        print(f"エラー: READMEの更新に失敗しました: {e}", file=sys.stderr)
+        raise
+
+    # Only update spirit data if README update succeeded
     spirit_data['mood'] = new_mood
     spirit_data['lastMessage'] = new_utterance
     spirit_data['lastUpdated'] = datetime.datetime.now().isoformat() + "Z"
@@ -461,10 +645,14 @@ def main():
     spirit_data['newsComment'] = news_comment
 
     # Save updated data
-    save_spirit_data(spirit_data)
-
-    # Update README (single read/write for all sections)
-    update_readme(new_mood, new_utterance, news_items, news_comment)
+    try:
+        save_spirit_data(spirit_data)
+    except Exception as e:
+        print(f"エラー: .spirit.jsonの保存に失敗しました: {e}", file=sys.stderr)
+        # At this point README is updated but .spirit.json failed
+        # We re-raise to signal failure, though README remains updated
+        # The user will need to fix the underlying issue (e.g., permissions, disk space)
+        raise
 
     print(f"精霊の状態を更新しました: {new_mood} - {new_utterance}")
     if news_items:
