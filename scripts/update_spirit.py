@@ -132,7 +132,7 @@ def fetch_news(feeds=None):
                 for item in rss_items:
                     title_el = item.find("title")
                     link_el = item.find("link")
-                    if title_el is None or not title_el.text:
+                    if title_el is None or title_el.text is None or not title_el.text.strip():
                         continue
                     articles.append({
                         "source": feed["name"],
@@ -147,7 +147,7 @@ def fetch_news(feeds=None):
                 atom_ns = "{http://www.w3.org/2005/Atom}"
                 for entry in root.findall(".//" + atom_ns + "entry"):
                     title_el = entry.find(atom_ns + "title")
-                    if title_el is None or not title_el.text:
+                    if title_el is None or title_el.text is None or not title_el.text.strip():
                         continue
 
                     # Prefer <link rel="alternate"> or a link without a rel attribute.
@@ -321,7 +321,7 @@ def generate_news_comment(mood, profile, news_items):
             {"role": "user", "content": user_prompt},
         ],
         "max_tokens": 200,
-        "temperature": 0.9,
+        "temperature": 0.8,
     }).encode("utf-8")
 
     try:
@@ -336,7 +336,7 @@ def generate_news_comment(mood, profile, news_items):
             },
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             result = json.loads(resp.read().decode("utf-8"))
         choices = result.get("choices")
         if not choices:
@@ -409,12 +409,18 @@ def update_readme(mood, utterance, news_items=None, news_comment=""):
         content = re.sub(news_pattern, new_section, content, flags=re.DOTALL)
     else:
         insert = f"\n## 精霊が届けるニュース\n\n{new_section}\n"
-        sep_match = re.search(r'\n---\s*\n', content)
-        if sep_match:
-            pos = sep_match.start()
-            content = content[:pos] + insert + content[pos:]
+        # Prefer an explicit anchor comment if present, for robust placement.
+        anchor_match = re.search(r'<!--\s*SPIRIT_NEWS_ANCHOR\s*-->', content)
+        if anchor_match:
+            start, end = anchor_match.span()
+            content = content[:start] + insert + content[end:]
         else:
-            content += insert
+            sep_match = re.search(r'\n---\s*\n', content)
+            if sep_match:
+                pos = sep_match.start()
+                content = content[:pos] + insert + content[pos:]
+            else:
+                content += insert
 
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(content)
