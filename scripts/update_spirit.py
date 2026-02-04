@@ -14,6 +14,7 @@ import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
 import time
+import functools
 
 
 # ニュースソース定義 (あとから追加可能)
@@ -42,6 +43,15 @@ RETRY_BACKOFF_MULTIPLIER = 2
 CACHE_TTL = 3600
 
 
+class APIValidationError(Exception):
+    """Exception raised when API response validation fails.
+    
+    This is a non-retryable error indicating the API returned
+    a response in an unexpected format.
+    """
+    pass
+
+
 def retry_with_backoff(max_retries=MAX_RETRIES, initial_delay=RETRY_INITIAL_DELAY,
                        max_delay=RETRY_MAX_DELAY, multiplier=RETRY_BACKOFF_MULTIPLIER):
     """Decorator to retry a function with exponential backoff.
@@ -56,6 +66,7 @@ def retry_with_backoff(max_retries=MAX_RETRIES, initial_delay=RETRY_INITIAL_DELA
         Decorated function that retries on exception
     """
     def decorator(func):
+        @functools.wraps(func)
         def wrapper(*args, **kwargs):
             delay = initial_delay
             last_exception = None
@@ -63,6 +74,9 @@ def retry_with_backoff(max_retries=MAX_RETRIES, initial_delay=RETRY_INITIAL_DELA
             for attempt in range(max_retries + 1):
                 try:
                     return func(*args, **kwargs)
+                except APIValidationError:
+                    # Don't retry API validation errors - they won't be fixed by retrying
+                    raise
                 except Exception as e:
                     last_exception = e
                     if attempt < max_retries:
@@ -98,7 +112,12 @@ def load_news_cache():
         with open(cache_path, 'r', encoding='utf-8') as f:
             cache_data = json.load(f)
 
-        cached_time = datetime.datetime.fromisoformat(cache_data.get("timestamp", ""))
+        # Check if timestamp exists
+        if "timestamp" not in cache_data:
+            print("キャッシュにタイムスタンプがありません")
+            return None
+
+        cached_time = datetime.datetime.fromisoformat(cache_data["timestamp"])
         current_time = datetime.datetime.now()
         age_seconds = (current_time - cached_time).total_seconds()
 
@@ -489,11 +508,11 @@ def _generate_news_comment_with_retry(mood, profile, news_items, token):
 
     choices = result.get("choices")
     if not choices:
-        raise ValueError("GitHub Models API: レスポンスに choices がありません")
+        raise APIValidationError("GitHub Models API: レスポンスに choices がありません")
 
     content = choices[0].get("message", {}).get("content")
     if not content:
-        raise ValueError("GitHub Models API: レスポンスに message.content がありません")
+        raise APIValidationError("GitHub Models API: レスポンスに message.content がありません")
 
     return content.strip()
 
