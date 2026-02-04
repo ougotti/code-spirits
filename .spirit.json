@@ -1,11 +1,13 @@
 {
-  "mood": "sleepy",
-  "lastMessage": "そろそろ休息の時間ですね...",
-  "lastUpdated": "2026-02-04T00:07:43.305650Z",
+  "mood": "excited",
+  "lastMessage": "新しい力が宿った！",
+  "lastUpdated": "2026-02-04T13:59:40.797729Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
     "age": 231,
     "personality": "gentle and wise"
-  }
+  },
+  "news": [],
+  "newsComment": ""
 }
