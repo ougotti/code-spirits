@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: sleepy
+**気分**: calm
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> そろそろ休息の時間ですね...
+> バグが消えて静けさが戻った。
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> まだニュースを取得していません...
+> ニュースを取得できませんでした...
 <!-- SPIRIT_NEWS_END -->
 
 ---
