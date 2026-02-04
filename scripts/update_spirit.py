@@ -12,6 +12,7 @@ import os
 import subprocess
 import urllib.request
 import urllib.error
+import urllib.parse
 import xml.etree.ElementTree as ET
 
 
@@ -389,8 +390,9 @@ def update_readme(mood, utterance, news_items=None, news_comment=""):
         for article in news_items:
             title = _escape_md_link(article['title'])
             link = article.get("link", "")
-            # Escape parentheses in URLs to avoid breaking markdown links
-            safe_link = link.replace("(", "%28").replace(")", "%29") if link else ""
+            # Properly encode URLs to avoid breaking markdown links
+            # Encode parentheses and brackets which can break markdown, but preserve URL structure
+            safe_link = urllib.parse.quote(link, safe=':/?#@!$&\'*+,;=') if link else ""
             if safe_link:
                 lines.append(f"- [{title}]({safe_link}) ({article['source']})")
             else:
