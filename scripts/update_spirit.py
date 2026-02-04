@@ -124,19 +124,53 @@ def fetch_news(feeds=None):
             root = ET.fromstring(xml_data)
             count = 0
             max_items = feed.get("max_items", 3)
-            for item in root.iter("item"):
-                title_el = item.find("title")
-                link_el = item.find("link")
-                if title_el is None or not title_el.text:
-                    continue
-                articles.append({
-                    "source": feed["name"],
-                    "title": title_el.text.strip(),
-                    "link": link_el.text.strip() if link_el is not None and link_el.text else "",
-                })
-                count += 1
-                if count >= max_items:
-                    break
+
+            # First, try RSS 2.0 style <item> elements.
+            rss_items = list(root.iter("item"))
+            if rss_items:
+                for item in rss_items:
+                    title_el = item.find("title")
+                    link_el = item.find("link")
+                    if title_el is None or not title_el.text:
+                        continue
+                    articles.append({
+                        "source": feed["name"],
+                        "title": title_el.text.strip(),
+                        "link": link_el.text.strip() if link_el is not None and link_el.text else "",
+                    })
+                    count += 1
+                    if count >= max_items:
+                        break
+            else:
+                # Fallback: try Atom feed (<entry> elements in Atom namespace).
+                atom_ns = "{http://www.w3.org/2005/Atom}"
+                for entry in root.findall(".//" + atom_ns + "entry"):
+                    title_el = entry.find(atom_ns + "title")
+                    if title_el is None or not title_el.text:
+                        continue
+
+                    # Prefer <link rel="alternate"> or a link without a rel attribute.
+                    link_el = None
+                    for candidate in entry.findall(atom_ns + "link"):
+                        rel = candidate.get("rel")
+                        if rel is None or rel == "alternate":
+                            link_el = candidate
+                            break
+
+                    link_href = ""
+                    if link_el is not None:
+                        href = link_el.get("href")
+                        if href:
+                            link_href = href.strip()
+
+                    articles.append({
+                        "source": feed["name"],
+                        "title": title_el.text.strip(),
+                        "link": link_href,
+                    })
+                    count += 1
+                    if count >= max_items:
+                        break
         except Exception:
             continue
 
