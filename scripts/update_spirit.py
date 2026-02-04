@@ -498,29 +498,40 @@ def _generate_news_comment_with_retry(mood, profile, news_items, token):
         "temperature": 0.8,
     }).encode("utf-8")
 
-    req = urllib.request.Request(
-        "https://models.github.ai/inference/chat/completions",
-        data=body,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/vnd.github+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        result = json.loads(resp.read().decode("utf-8"))
-
-    choices = result.get("choices")
-    if not choices:
-        raise APIValidationError("GitHub Models API: レスポンスに choices がありません")
-
-    content = choices[0].get("message", {}).get("content")
-    if not content:
-        raise APIValidationError("GitHub Models API: レスポンスに message.content がありません")
-
-    return content.strip()
+    try:
+        req = urllib.request.Request(
+            "https://models.github.ai/inference/chat/completions",
+            data=body,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+        choices = result.get("choices")
+        if not choices:
+            print("GitHub Models API: レスポンスに choices がありません")
+            return fallback
+        content = choices[0].get("message", {}).get("content")
+        if not content:
+            print("GitHub Models API: レスポンスに message.content がありません")
+            return fallback
+        return content.strip()
+    except urllib.error.HTTPError as e:
+        if e.code == 401 or e.code == 403:
+            print(f"GitHub Models API の呼び出しに失敗 (認証エラー: {e.code})")
+            print("ヒント: GITHUB_TOKENに 'models: read' 権限が必要です")
+            print("詳細: https://github.blog/changelog/2025-05-15-modelsread-now-required-for-github-models-access/")
+        else:
+            print(f"GitHub Models API の呼び出しに失敗 (HTTPエラー: {e.code} - {e.reason})")
+        return fallback
+    except Exception as e:
+        print(f"GitHub Models API の呼び出しに失敗: {e}")
+        return fallback
 
 
 def _escape_md_link(text):

@@ -11,8 +11,8 @@ jobs:
   update-spirit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      models: read
+      contents: write  # Required to commit and push changes to .spirit.json and README.md
+      models: read     # Required for GitHub Models API access (see https://github.blog/changelog/2025-05-15-modelsread-now-required-for-github-models-access/)
 
     steps:
     - name: Checkout repository
