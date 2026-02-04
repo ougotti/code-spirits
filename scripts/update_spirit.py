@@ -10,6 +10,25 @@ import random
 import re
 import os
 import subprocess
+import urllib.request
+import xml.etree.ElementTree as ET
+
+
+# ニュースソース定義 (あとから追加可能)
+# 各エントリ: {"name": 表示名, "url": RSSフィードURL, "max_items": 取得件数}
+NEWS_FEEDS = [
+    {
+        "name": "GitHub Blog",
+        "url": "https://github.blog/feed/",
+        "max_items": 3,
+    },
+    # 追加例:
+    # {
+    #     "name": "Hacker News",
+    #     "url": "https://hnrss.org/frontpage",
+    #     "max_items": 3,
+    # },
+]
 
 
 def load_spirit_data():
@@ -77,6 +96,51 @@ def get_latest_commit_message():
     except (subprocess.SubprocessError, FileNotFoundError):
         pass
     return None
+
+
+def fetch_news(feeds=None):
+    """Fetch news from RSS feeds.
+
+    Args:
+        feeds: list of feed dicts (default: NEWS_FEEDS).
+               Each dict has 'name', 'url', and 'max_items'.
+
+    Returns:
+        list of {"source": str, "title": str, "link": str}
+    """
+    if feeds is None:
+        feeds = NEWS_FEEDS
+
+    articles = []
+    for feed in feeds:
+        try:
+            req = urllib.request.Request(
+                feed["url"],
+                headers={"User-Agent": "CodeSpirits/1.0"},
+            )
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                xml_data = resp.read()
+
+            root = ET.fromstring(xml_data)
+            count = 0
+            max_items = feed.get("max_items", 3)
+            for item in root.iter("item"):
+                title_el = item.find("title")
+                link_el = item.find("link")
+                if title_el is None or not title_el.text:
+                    continue
+                articles.append({
+                    "source": feed["name"],
+                    "title": title_el.text.strip(),
+                    "link": link_el.text.strip() if link_el is not None and link_el.text else "",
+                })
+                count += 1
+                if count >= max_items:
+                    break
+        except Exception:
+            continue
+
+    return articles
 
 
 def get_mood_based_on_commit():
@@ -169,6 +233,68 @@ def get_utterance_for_mood(mood):
     return random.choice(utterances.get(mood, ["何か感じるものがあります..."]))
 
 
+def generate_news_comment(mood, profile, news_items):
+    """Use GitHub Models API to generate a spirit-flavored news comment.
+
+    Falls back to a simple static comment when the API is unavailable
+    or GITHUB_TOKEN is not set.
+    """
+    if not news_items:
+        return ""
+
+    # フォールバック用の静的コメント
+    fallback = "風に乗って届いたニュースをお届けします..."
+
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        return fallback
+
+    headlines = "\n".join(f"- {a['title']}" for a in news_items)
+    user_prompt = (
+        f"あなたは「{profile['name']}」という精霊です。"
+        f"属性は{profile['element']}、年齢は{profile['age']}歳、"
+        f"性格は「{profile['personality']}」です。\n"
+        f"今の気分は「{mood}」です。\n\n"
+        f"以下のニュース見出しについて、あなたのキャラクターらしく"
+        f"短く（2〜3文で）コメントしてください:\n{headlines}"
+    )
+
+    body = json.dumps({
+        "model": "openai/gpt-4o-mini",
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "あなたはリポジトリに住む風の精霊です。"
+                    "詩的で穏やかな口調で話します。"
+                    "返答はコメント本文のみで、余計な前置きは不要です。"
+                ),
+            },
+            {"role": "user", "content": user_prompt},
+        ],
+        "max_tokens": 200,
+        "temperature": 0.9,
+    }).encode("utf-8")
+
+    try:
+        req = urllib.request.Request(
+            "https://models.github.ai/inference/chat/completions",
+            data=body,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read())
+        return result["choices"][0]["message"]["content"].strip()
+    except Exception:
+        return fallback
+
+
 def update_readme(mood, utterance):
     """Update README.md with new spirit status and utterance"""
     readme_path = 'README.md'
@@ -193,6 +319,48 @@ def update_readme(mood, utterance):
         f.write(content)
 
 
+def update_readme_news(news_items, news_comment):
+    """Update README.md with the news section."""
+    readme_path = 'README.md'
+    if not os.path.exists(readme_path):
+        return
+
+    with open(readme_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # ニュースコンテンツを構築
+    if news_items:
+        lines = []
+        if news_comment:
+            lines.append(f"> {news_comment}")
+            lines.append("")
+        for article in news_items:
+            if article.get("link"):
+                lines.append(f"- [{article['title']}]({article['link']}) ({article['source']})")
+            else:
+                lines.append(f"- {article['title']} ({article['source']})")
+        news_body = "\n".join(lines)
+    else:
+        news_body = "> ニュースを取得できませんでした..."
+
+    new_section = f"<!-- SPIRIT_NEWS_START -->\n{news_body}\n<!-- SPIRIT_NEWS_END -->"
+
+    # マーカーが既にあれば置換、なければ --- の前に挿入
+    news_pattern = r'<!-- SPIRIT_NEWS_START -->.*?<!-- SPIRIT_NEWS_END -->'
+    if re.search(news_pattern, content, flags=re.DOTALL):
+        content = re.sub(news_pattern, new_section, content, flags=re.DOTALL)
+    else:
+        sep = content.find('\n---\n')
+        insert = f"\n## 精霊が届けるニュース\n\n{new_section}\n"
+        if sep != -1:
+            content = content[:sep] + insert + content[sep:]
+        else:
+            content += insert
+
+    with open(readme_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+
 def save_spirit_data(data):
     """Save spirit data to .spirit.json"""
     with open('.spirit.json', 'w', encoding='utf-8') as f:
@@ -203,26 +371,37 @@ def main():
     """Main function to update spirit status"""
     # Load current spirit data
     spirit_data = load_spirit_data()
-    
+
     # Try to get mood based on commit first, then fall back to time-based
     new_mood = get_mood_based_on_commit()
     if new_mood is None:
         new_mood = get_mood_based_on_time()
-    
+
     new_utterance = get_utterance_for_mood(new_mood)
-    
+
+    # Fetch news and generate AI comment
+    news_items = fetch_news()
+    news_comment = generate_news_comment(new_mood, spirit_data["profile"], news_items)
+
     # Update spirit data
     spirit_data['mood'] = new_mood
     spirit_data['lastMessage'] = new_utterance
     spirit_data['lastUpdated'] = datetime.datetime.now().isoformat() + "Z"
-    
+    spirit_data['news'] = news_items
+    spirit_data['newsComment'] = news_comment
+
     # Save updated data
     save_spirit_data(spirit_data)
-    
+
     # Update README
     update_readme(new_mood, new_utterance)
-    
+    update_readme_news(news_items, news_comment)
+
     print(f"精霊の状態を更新しました: {new_mood} - {new_utterance}")
+    if news_items:
+        print(f"ニュースを{len(news_items)}件取得しました")
+    else:
+        print("ニュースの取得をスキップしました")
 
 
 if __name__ == "__main__":
