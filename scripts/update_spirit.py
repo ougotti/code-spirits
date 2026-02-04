@@ -9,6 +9,7 @@ import datetime
 import random
 import re
 import os
+import sys
 import subprocess
 import urllib.request
 import urllib.error
@@ -444,7 +445,7 @@ def main():
     try:
         update_readme(new_mood, new_utterance, news_items, news_comment)
     except Exception as e:
-        print(f"エラー: READMEの更新に失敗しました: {e}")
+        print(f"エラー: READMEの更新に失敗しました: {e}", file=sys.stderr)
         raise
 
     # Only update spirit data if README update succeeded
@@ -458,7 +459,7 @@ def main():
     try:
         save_spirit_data(spirit_data)
     except Exception as e:
-        print(f"エラー: .spirit.jsonの保存に失敗しました: {e}")
+        print(f"エラー: .spirit.jsonの保存に失敗しました: {e}", file=sys.stderr)
         # At this point README is updated but .spirit.json failed
         # This is less critical since the next run will sync them
         raise
