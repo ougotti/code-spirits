@@ -461,7 +461,8 @@ def main():
     except Exception as e:
         print(f"エラー: .spirit.jsonの保存に失敗しました: {e}", file=sys.stderr)
         # At this point README is updated but .spirit.json failed
-        # This is less critical since the next run will sync them
+        # We re-raise to signal failure, though README remains updated
+        # The user will need to fix the underlying issue (e.g., permissions, disk space)
         raise
 
     print(f"精霊の状態を更新しました: {new_mood} - {new_utterance}")
