@@ -20,6 +20,9 @@ wheels/
 .installed.cfg
 *.egg
 
+# News cache
+.news_cache.json
+
 # IDE files
 .vscode/
 .idea/

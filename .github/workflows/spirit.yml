@@ -10,19 +10,24 @@ on:
 jobs:
   update-spirit:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write  # Required to commit and push changes to .spirit.json and README.md
+      models: read     # Required for GitHub Models API access (see https://github.blog/changelog/2025-05-15-modelsread-now-required-for-github-models-access/)
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-        
+
     - name: Update spirit status
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd ${{ github.workspace }}
         python scripts/update_spirit.py
