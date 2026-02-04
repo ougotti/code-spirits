@@ -5,13 +5,13 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: excited
+**気分**: neutral
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 新しい力が宿った！
+> 穏やかな時間が流れています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース

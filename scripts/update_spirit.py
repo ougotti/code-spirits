@@ -117,7 +117,12 @@ def load_news_cache():
             print("キャッシュにタイムスタンプがありません")
             return None
 
+        # Parse timestamp (may be timezone-aware or naive)
         cached_time = datetime.datetime.fromisoformat(cache_data["timestamp"])
+        # Use timezone-naive datetime for consistency
+        if cached_time.tzinfo is not None:
+            cached_time = cached_time.replace(tzinfo=None)
+        
         current_time = datetime.datetime.now()
         age_seconds = (current_time - cached_time).total_seconds()
 
