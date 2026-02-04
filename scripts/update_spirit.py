@@ -335,7 +335,7 @@ def generate_news_comment(mood, profile, news_items):
             },
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             result = json.loads(resp.read().decode("utf-8"))
         choices = result.get("choices")
         if not choices:
