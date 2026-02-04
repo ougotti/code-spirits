@@ -132,7 +132,7 @@ def fetch_news(feeds=None):
                 for item in rss_items:
                     title_el = item.find("title")
                     link_el = item.find("link")
-                    if title_el is None or not title_el.text:
+                    if title_el is None or not title_el.text or not title_el.text.strip():
                         continue
                     articles.append({
                         "source": feed["name"],
@@ -147,7 +147,7 @@ def fetch_news(feeds=None):
                 atom_ns = "{http://www.w3.org/2005/Atom}"
                 for entry in root.findall(".//" + atom_ns + "entry"):
                     title_el = entry.find(atom_ns + "title")
-                    if title_el is None or not title_el.text:
+                    if title_el is None or not title_el.text or not title_el.text.strip():
                         continue
 
                     # Prefer <link rel="alternate"> or a link without a rel attribute.
