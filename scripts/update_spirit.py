@@ -171,7 +171,8 @@ def fetch_news(feeds=None):
                     count += 1
                     if count >= max_items:
                         break
-        except Exception:
+        except Exception as e:
+            print(f"ニュースの取得に失敗 ({feed.get('name', feed['url'])}): {e}")
             continue
 
     return articles
@@ -283,11 +284,16 @@ def generate_news_comment(mood, profile, news_items):
     if not token:
         return fallback
 
+    name = profile.get("name", "精霊")
+    element = profile.get("element", "wind")
+    age = profile.get("age", "不明")
+    personality = profile.get("personality", "gentle and wise")
+
     headlines = "\n".join(f"- {a['title']}" for a in news_items)
     user_prompt = (
-        f"あなたは「{profile['name']}」という精霊です。"
-        f"属性は{profile['element']}、年齢は{profile['age']}歳、"
-        f"性格は「{profile['personality']}」です。\n"
+        f"あなたは「{name}」という精霊です。"
+        f"属性は{element}、年齢は{age}歳、"
+        f"性格は「{personality}」です。\n"
         f"今の気分は「{mood}」です。\n\n"
         f"以下のニュース見出しについて、あなたのキャラクターらしく"
         f"短く（2〜3文で）コメントしてください:\n{headlines}"
@@ -323,9 +329,14 @@ def generate_news_comment(mood, profile, news_items):
             method="POST",
         )
         with urllib.request.urlopen(req, timeout=30) as resp:
-            result = json.loads(resp.read())
-        return result["choices"][0]["message"]["content"].strip()
-    except Exception:
+            result = json.loads(resp.read().decode("utf-8"))
+        choices = result.get("choices")
+        if not choices:
+            print("GitHub Models API: レスポンスに choices がありません")
+            return fallback
+        return choices[0]["message"]["content"].strip()
+    except Exception as e:
+        print(f"GitHub Models API の呼び出しに失敗: {e}")
         return fallback
 
 
@@ -384,10 +395,11 @@ def update_readme_news(news_items, news_comment):
     if re.search(news_pattern, content, flags=re.DOTALL):
         content = re.sub(news_pattern, new_section, content, flags=re.DOTALL)
     else:
-        sep = content.find('\n---\n')
         insert = f"\n## 精霊が届けるニュース\n\n{new_section}\n"
-        if sep != -1:
-            content = content[:sep] + insert + content[sep:]
+        sep_match = re.search(r'\n---\s*\n', content)
+        if sep_match:
+            pos = sep_match.start()
+            content = content[:pos] + insert + content[pos:]
         else:
             content += insert
 
