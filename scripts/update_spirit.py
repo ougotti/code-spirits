@@ -320,7 +320,7 @@ def generate_news_comment(mood, profile, news_items):
             {"role": "user", "content": user_prompt},
         ],
         "max_tokens": 200,
-        "temperature": 0.9,
+        "temperature": 0.8,
     }).encode("utf-8")
 
     try:
