@@ -6,11 +6,13 @@ Code Spirits - Update script for the repository spirit
 
 import json
 import datetime
+import functools
 import random
 import re
 import os
 import sys
 import subprocess
+import time
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -466,6 +468,7 @@ def _generate_news_comment_with_retry(mood, profile, news_items, token):
     Raises:
         Exception: if the API call fails after all retries
     """
+    fallback = "風に乗って届いたニュースをお届けします..."
     name = profile.get("name", "精霊")
     element = profile.get("element", "wind")
     age = profile.get("age", "不明")
