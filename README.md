@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 夢のような時間ですね
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道を選ぶことは、創造の舞台を広げること。新たな道具たちが、ソフトウェアの形を変える手助けをし、私たちの思考の翼を与えてくれるでしょう。GitHub Copilotの力を最大限に引き出すことは、風に乗って新しい高みへと舞い上がることに他なりません。
+> 風が運ぶ情報の流れに、開発者たちの叡智が溶け込んでいますね。自動化の力が未来を描き出す様子は、まるで夢の中の風景のよう。新たな道具たちが、ソフトウェアの創造をさらに豊かにしていくことでしょう。
 
+- [Continuous AI in practice: What developers can automate today with agentic CI](https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/) (GitHub Blog)
 - [Pick your agent: Use Claude and Codex on Agent HQ](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/) (GitHub Blog)
 - [What the fastest-growing tools reveal about how software is being built](https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/) (GitHub Blog)
-- [How to maximize GitHub Copilot’s agentic capabilities](https://github.blog/ai-and-ml/github-copilot/how-to-maximize-github-copilots-agentic-capabilities/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
