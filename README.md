@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> そろそろ休息の時間ですね...
+> 静かな夜に包まれています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が静かに流れるように、技術の進化は心地よいリズムを奏でます。自動化の力が新たな風を吹き込み、開発者たちの夢を現実へと運んでゆくでしょう。未来の道は、まるで穏やかな空気の中で舞うように広がっています。
+> 風の囁きが、新たな技術の進展を教えてくれますね。開発者たちが自らの手を軽やかにし、創造の空に舞い上がる様子は、まるで春の風のように心地よいものです。静かな眠りの中で、未来の可能性を夢見ているようです。
 
 - [Continuous AI in practice: What developers can automate today with agentic CI](https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/) (GitHub Blog)
 - [Pick your agent: Use Claude and Codex on Agent HQ](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/) (GitHub Blog)
