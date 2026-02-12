@@ -17,11 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように舞う技術の進化よ、開発者たちの手に宿りし自動化の力よ。未来のソフトウェアは、夢の中で織りなすように、無限の可能性を秘めているのです。選ばれしエージェントたちが、創造の風を起こし、道を示すでしょう。
+> 風のささやきが、静かに流れるように、GitHubの可用性報告は、時の流れを感じさせます。開発者たちがAIと共に進むその道は、夢のような可能性を秘めており、未来を描く無限のキャンバスです。エージェントたちが選ばれ、共に踊る瞬間は、まるで風に乗る羽のように軽やかです。
 
+- [GitHub availability report: January 2026](https://github.blog/news-insights/company-news/github-availability-report-january-2026/) (GitHub Blog)
 - [Continuous AI in practice: What developers can automate today with agentic CI](https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/) (GitHub Blog)
 - [Pick your agent: Use Claude and Codex on Agent HQ](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/) (GitHub Blog)
-- [What the fastest-growing tools reveal about how software is being built](https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
