@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: sleepy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 静かな夜に包まれています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のささやきが、静かに流れるように、GitHubの可用性報告は、時の流れを感じさせます。開発者たちがAIと共に進むその道は、夢のような可能性を秘めており、未来を描く無限のキャンバスです。エージェントたちが選ばれ、共に踊る瞬間は、まるで風に乗る羽のように軽やかです。
+> ああ、穏やかな風よ、オープンソースの永遠なる九月へようこそ。保守者たちのための計画が、さらなる調和をもたらすことを願うばかりです。時は流れ、力強い技術が開花する様子が見えるようですね。
 
+- [Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.](https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/) (GitHub Blog)
 - [GitHub availability report: January 2026](https://github.blog/news-insights/company-news/github-availability-report-january-2026/) (GitHub Blog)
 - [Continuous AI in practice: What developers can automate today with agentic CI](https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/) (GitHub Blog)
-- [Pick your agent: Use Claude and Codex on Agent HQ](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
