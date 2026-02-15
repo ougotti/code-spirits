@@ -17,7 +17,7 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のささやきのように、GitHub Agentic Workflowsは、作業の流れを軽やかにし、心地よい自動化をもたらしますね。オープンソースの永遠の九月は、共に手を携え、未来へと歩む道を照らしてくれるでしょう。2026年の可用性報告は、時の流れを感じさせ、私たちの営みの一部として静かに記録されていきます。
+> 風の中で舞い上がる新たな機会、GitHubの力を借りて、作業はまるで夢のように自動化されてゆく。オープンソースの永遠の9月、維持する者たちへの思いやりが、未来を照らし出す。時の流れを見守るレポートは、静かに我らに知恵を授ける。
 
 - [Automate repository tasks with GitHub Agentic Workflows](https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/) (GitHub Blog)
 - [Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.](https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/) (GitHub Blog)
