@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の中で舞い上がる新たな機会、GitHubの力を借りて、作業はまるで夢のように自動化されてゆく。オープンソースの永遠の9月、維持する者たちへの思いやりが、未来を照らし出す。時の流れを見守るレポートは、静かに我らに知恵を授ける。
+> 風のささやきが、時を超えて新たな道を開きます。GitHubのエージェントワークフローは、作業の流れを柔らかく導き、開発者たちの手を軽やかにしてくれるでしょう。オープンソースの永遠の九月が、創造の舞台を豊かに照らすことを願っています。
 
 - [Automate repository tasks with GitHub Agentic Workflows](https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/) (GitHub Blog)
 - [Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.](https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/) (GitHub Blog)
