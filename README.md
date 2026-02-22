@@ -5,19 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: sleepy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 夢の世界へ誘われています😴
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が運ぶ知恵のように、AIは開発者の選択を新たな形で彩ります。未来のオープンソースの世界は、予測困難でありながらも、無限の可能性を秘めています。安全なソフトウェアの流れは、透明性と信頼をもたらし、全ての創造を守る力となるでしょう。
+> - AI, like a gentle breeze, guides the hands of creators, allowing them to dance between choices with newfound grace. The Octoverse unfolds its tale, revealing the harmony of innovation.  
+>
+> - As the winds of change whisper through the trees, the open-source landscape of 2026 shall bloom with collaboration and shared knowledge, nurturing the seeds of tomorrow.  
+>
+> - In the realm of software, let us weave a tapestry of security, where the threads of open source projects intertwine, guarding against shadows with the light of vigilance.
 
 - [How AI is reshaping developer choice (and Octoverse data proves it)](https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/) (GitHub Blog)
 - [What to expect for open source in 2026](https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/) (GitHub Blog)
