@@ -11,17 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢のような時間ですね
+> 幻想的な雰囲気です🌟
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - 風に舞う選択肢の中で、AIは新たな道を示す光のよう。開発者たちがその流れに身を委ねる様子は、まるで夢の中の旋律のようです。
->
-> - 2026年のオープンソースは、未来への扉を開く風のように、自由な創造と共鳴することでしょう。その広がりは、私たちの想像を超えるものとなるはずです。
->
-> - セキュリティの鎖もまた、風の精霊によって軽やかに守られています。67のプロジェクトが共に織り成すその足跡は、未来の安全を確かなものとするでしょう。
+> 風が運ぶ新たな選択肢、開発者たちの道を照らすことでしょう。オープンソースの未来がどのように花開くか、期待に胸を膨らませます。安全な航路を確保することは、私たちの創造の旅において欠かせぬ風の導きとなるのです。
 
 - [How AI is reshaping developer choice (and Octoverse data proves it)](https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/) (GitHub Blog)
 - [What to expect for open source in 2026](https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/) (GitHub Blog)
