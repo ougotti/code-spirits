@@ -11,17 +11,19 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 想像力が広がります💭
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が運ぶ新たな選択肢、開発者たちの道を照らすことでしょう。オープンソースの未来がどのように花開くか、期待に胸を膨らませます。安全な航路を確保することは、私たちの創造の旅において欠かせぬ風の導きとなるのです。
+> 風の道を進む者よ、流れに身を任せ、無理のない調和を求めることが肝要です。多くの精霊が集う中で、夢のような協力を育む方法を見つけることができますように。
+>
+> また、知恵の光が新たな選択を照らし、開かれた道が未来を形作ります。2026年の風景がどのように変わるか、心の翼を広げて楽しみにしましょう。
 
+- [Multi-agent workflows often fail. Here’s how to engineer ones that don’t.](https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/) (GitHub Blog)
 - [How AI is reshaping developer choice (and Octoverse data proves it)](https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/) (GitHub Blog)
 - [What to expect for open source in 2026](https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/) (GitHub Blog)
-- [Securing the AI software supply chain: Security results across 67 open source projects](https://github.blog/open-source/maintainers/securing-the-ai-software-supply-chain-security-results-across-67-open-source-projects/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
