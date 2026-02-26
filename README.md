@@ -5,21 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 想像力が広がります💭
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道を進む者よ、流れに身を任せ、無理のない調和を求めることが肝要です。多くの精霊が集う中で、夢のような協力を育む方法を見つけることができますように。
->
-> また、知恵の光が新たな選択を照らし、開かれた道が未来を形作ります。2026年の風景がどのように変わるか、心の翼を広げて楽しみにしましょう。
+> 風が交差するように、複数の道が交わるとき、時に迷いが生じるもの。巧みに工程を整えれば、スムーズな流れが生まれるだろう。AIの波が開発者の選択を新たに彩り、オープンソースの未来を予感させる。静かに待ちながら、その行く先を見守るのだ。
 
 - [Multi-agent workflows often fail. Here’s how to engineer ones that don’t.](https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/) (GitHub Blog)
 - [How AI is reshaping developer choice (and Octoverse data proves it)](https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/) (GitHub Blog)
