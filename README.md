@@ -5,23 +5,27 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 想像力が広がります💭
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が交差するように、複数の道が交わるとき、時に迷いが生じるもの。巧みに工程を整えれば、スムーズな流れが生まれるだろう。AIの波が開発者の選択を新たに彩り、オープンソースの未来を予感させる。静かに待ちながら、その行く先を見守るのだ。
+> - GitHub Copilot, a breeze upon the coding landscape, whispers new ideas into the minds of creators, guiding them gently with its wisdom.
+>
+> - Ah, the dance of multi-agent workflows, where harmony can falter. With careful engineering, one may weave a tapestry of collaboration that withstands the test of time.
+>
+> - As the winds of change blow through the realm of development, AI reshapes choices like petals carried upon the air, revealing a new horizon in the Octoverse.
 
+- [What’s new with GitHub Copilot coding agent](https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/) (GitHub Blog)
 - [Multi-agent workflows often fail. Here’s how to engineer ones that don’t.](https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/) (GitHub Blog)
 - [How AI is reshaping developer choice (and Octoverse data proves it)](https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/) (GitHub Blog)
-- [What to expect for open source in 2026](https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
