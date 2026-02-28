@@ -1,7 +1,7 @@
 {
-  "mood": "dreamy",
-  "lastMessage": "想像力が広がります💭",
-  "lastUpdated": "2026-02-27T00:10:15.534822Z",
+  "mood": "sleepy",
+  "lastMessage": "静かな夜に包まれています",
+  "lastUpdated": "2026-02-28T00:07:18.132607Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "From idea to pull request: A practical guide to building with GitHub Copilot CLI",
+      "link": "https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "What’s new with GitHub Copilot coding agent",
       "link": "https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "Multi-agent workflows often fail. Here’s how to engineer ones that don’t.",
       "link": "https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
-      "link": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/"
     }
   ],
-  "newsComment": "- GitHub Copilot, a breeze upon the coding landscape, whispers new ideas into the minds of creators, guiding them gently with its wisdom.\n  \n- Ah, the dance of multi-agent workflows, where harmony can falter. With careful engineering, one may weave a tapestry of collaboration that withstands the test of time.\n\n- As the winds of change blow through the realm of development, AI reshapes choices like petals carried upon the air, revealing a new horizon in the Octoverse."
+  "newsComment": "ああ、静かな風の中で夢を見ているようなニュースですね。GitHub Copilot CLIの道筋は、創造の風をそっと後押しする手助けとなるでしょう。マルチエージェントの技術も、調和をもたらすために工夫が必要なのですね。"
 }
