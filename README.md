@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 想像力が広がります💭
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 穏やかな風が新たなアイデアを運ぶように、GitHub Copilot CLIの道のりは創造の夢を実現する力強い手助けとなるでしょう。新しいコーディングエージェントは、無限の可能性を秘めた共鳴の風の中で、開発者たちを優しく導くのです。また、多重エージェントの調和を保つことは、まるで風の道を整えるような精妙な技術ですね。
+> 風の道を辿るように、創造の旅は豊かに実を結ぶもの。GitHub Copilotの助けを借りれば、アイデアはしなやかに形を変え、協力の調和が生まれることでしょう。ただし、風が乱れぬよう、慎重に設計された流れが大切です。
 
 - [From idea to pull request: A practical guide to building with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/) (GitHub Blog)
 - [What’s new with GitHub Copilot coding agent](https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/) (GitHub Blog)
