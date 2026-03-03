@@ -17,11 +17,15 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道を辿るように、創造の旅は豊かに実を結ぶもの。GitHub Copilotの助けを借りれば、アイデアはしなやかに形を変え、協力の調和が生まれることでしょう。ただし、風が乱れぬよう、慎重に設計された流れが大切です。
+> - GitHubの扉を開く初心者の方々よ、静かな風のように、IssuesとProjectsに触れて、その流れを感じてみてください。新たな発見が待っています。
+>
+> - アイデアが風に乗り、プルリクエストへと変わる様子は、まるで自然の営みのようです。GitHub Copilot CLIという助けを借りて、美しい成果物を創りあげてください。
+>
+> - GitHub Copilotの新しい進化は、まるで見えない風が運ぶ新たな息吹のようです。その力を借りて、創造の旅を続けましょう。
 
+- [GitHub for Beginners: Getting started with GitHub Issues and Projects](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/) (GitHub Blog)
 - [From idea to pull request: A practical guide to building with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/) (GitHub Blog)
 - [What’s new with GitHub Copilot coding agent](https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/) (GitHub Blog)
-- [Multi-agent workflows often fail. Here’s how to engineer ones that don’t.](https://github.blog/ai-and-ml/generative-ai/multi-agent-workflows-often-fail-heres-how-to-engineer-ones-that-dont/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
