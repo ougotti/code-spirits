@@ -534,6 +534,110 @@ def _generate_news_comment_with_retry(mood, profile, news_items, token):
         return fallback
 
 
+def translate_news_titles(news_items):
+    """Translate news titles to Japanese using GitHub Models API.
+
+    Args:
+        news_items: list of news articles with 'title' keys
+
+    Returns:
+        list of news articles with translated titles
+    """
+    if not news_items:
+        return news_items
+
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        print("GitHub Models API: GITHUB_TOKEN が設定されていないため、翻訳をスキップします")
+        return news_items
+
+    try:
+        return _translate_news_titles_with_retry(news_items, token)
+    except Exception as e:
+        print(f"ニュースタイトルの翻訳に失敗 (全リトライ失敗): {e}")
+        return news_items
+
+
+@retry_with_backoff()
+def _translate_news_titles_with_retry(news_items, token):
+    """Internal function to translate news titles with retry logic.
+
+    Args:
+        news_items: list of news articles
+        token: GitHub token
+
+    Returns:
+        list of news articles with translated titles
+    """
+    titles = [item['title'] for item in news_items]
+    titles_text = "\n".join(f"{i+1}. {title}" for i, title in enumerate(titles))
+
+    user_prompt = (
+        f"以下の英語のニュース見出しを日本語に翻訳してください。\n"
+        f"番号付きで、翻訳結果のみを出力してください（説明は不要）:\n\n"
+        f"{titles_text}"
+    )
+
+    body = json.dumps({
+        "model": "openai/gpt-4o-mini",
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "あなたは翻訳者です。ニュース見出しを自然な日本語に翻訳してください。"
+                    "番号付きリスト形式で翻訳結果のみを返してください。"
+                ),
+            },
+            {"role": "user", "content": user_prompt},
+        ],
+        "max_tokens": 500,
+        "temperature": 0.3,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://models.github.ai/inference/chat/completions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        result = json.loads(resp.read().decode("utf-8"))
+
+    choices = result.get("choices")
+    if not choices:
+        print("GitHub Models API: 翻訳レスポンスに choices がありません")
+        return news_items
+
+    content = choices[0].get("message", {}).get("content")
+    if not content:
+        print("GitHub Models API: 翻訳レスポンスに message.content がありません")
+        return news_items
+
+    # Parse translated titles from response
+    translated_items = []
+    lines = content.strip().split("\n")
+    for i, item in enumerate(news_items):
+        translated_title = item['title']  # fallback to original
+        for line in lines:
+            # Match patterns like "1. タイトル" or "1: タイトル"
+            match = re.match(rf"^{i+1}[\.\):\s]+(.+)$", line.strip())
+            if match:
+                translated_title = match.group(1).strip()
+                break
+        translated_items.append({
+            **item,
+            'title': translated_title
+        })
+
+    print(f"ニュースタイトルを {len(translated_items)} 件翻訳しました")
+    return translated_items
+
+
 def _escape_md_link(text):
     """Escape markdown special characters in link text."""
     return text.replace("[", "\\[").replace("]", "\\]")
@@ -625,8 +729,9 @@ def main():
 
     new_utterance = get_utterance_for_mood(new_mood)
 
-    # Fetch news and generate AI comment
+    # Fetch news, translate titles, and generate AI comment
     news_items = fetch_news()
+    news_items = translate_news_titles(news_items)
     news_comment = generate_news_comment(new_mood, spirit_data["profile"], news_items)
 
     # Update README first (single read/write for all sections)
