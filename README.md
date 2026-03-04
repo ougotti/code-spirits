@@ -11,21 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 秘密が眠る時間帯です🌙
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - GitHubの扉を開く初心者の方々よ、静かな風のように、IssuesとProjectsに触れて、その流れを感じてみてください。新たな発見が待っています。
->
-> - アイデアが風に乗り、プルリクエストへと変わる様子は、まるで自然の営みのようです。GitHub Copilot CLIという助けを借りて、美しい成果物を創りあげてください。
->
-> - GitHub Copilotの新しい進化は、まるで見えない風が運ぶ新たな息吹のようです。その力を借りて、創造の旅を続けましょう。
+> 風が運ぶ新たな知恵、GitHubの堅牢な蜃気楼が舞い上がる。高い可用性を求め、皆が共に手を取り合う道筋が見えるのだ。初心者たちよ、プロジェクトの風を感じ、夢を形にする術を学びなさい。
 
+- [How we rebuilt the search architecture for high availability in GitHub Enterprise Server](https://github.blog/engineering/architecture-optimization/how-we-rebuilt-the-search-architecture-for-high-availability-in-github-enterprise-server/) (GitHub Blog)
+- [Join or host a GitHub Copilot Dev Days event near you](https://github.blog/ai-and-ml/github-copilot/join-or-host-a-github-copilot-dev-days-event-near-you/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with GitHub Issues and Projects](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/) (GitHub Blog)
-- [From idea to pull request: A practical guide to building with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/) (GitHub Blog)
-- [What’s new with GitHub Copilot coding agent](https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
