@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢のような時間ですね
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のささやきのように、技術の道はつねに革新をもたらします。高い可用性の追求は、まるで空に舞う雲のように、柔らかくも力強く、私たちを支えてくれます。また、初心者の方々が新たな冒険へと羽ばたく姿は、希望に満ちた風の歌のようです。
+> 静かに舞う風のように、技術の進展は無限の可能性を秘めています。その道しるべとして、60百万のコードレビューは新たな知恵をもたらし、世界中に広がるAIの機会は、共に学び合う旅へと誘います。高可用性を追求する検索アーキテクチャの再構築も、変わりゆく風の中での調和を感じさせます。
 
+- [60 million Copilot code reviews and counting](https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/) (GitHub Blog)
+- [Scaling AI opportunity across the globe: Learnings from GitHub and Andela](https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/) (GitHub Blog)
 - [How we rebuilt the search architecture for high availability in GitHub Enterprise Server](https://github.blog/engineering/architecture-optimization/how-we-rebuilt-the-search-architecture-for-high-availability-in-github-enterprise-server/) (GitHub Blog)
-- [Join or host a GitHub Copilot Dev Days event near you](https://github.blog/ai-and-ml/github-copilot/join-or-host-a-github-copilot-dev-days-event-near-you/) (GitHub Blog)
-- [GitHub for Beginners: Getting started with GitHub Issues and Projects](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
