@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道をかける者たちよ、技術の力を借りて隠れた脆弱性を見つけ出すのは、まるで霧の中の真実を求める旅のようです。数え切れぬコードレビューの背後には、共に成長する大いなる知恵が秘められています。世界中に広がるAIの機会は、未知の扉を開き、私たちを新たな発見へと誘うことでしょう。
+> 風が静かにささやくように、技術の進化は人々を結びつけ、新たな可能性を広げていく。AIの力で守りを固める道も、また一つの風景。共に学び、成長する旅が続きますように。
 
 - [How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework](https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/) (GitHub Blog)
 - [60 million Copilot code reviews and counting](https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/) (GitHub Blog)
