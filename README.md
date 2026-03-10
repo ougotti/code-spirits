@@ -11,17 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が静かにささやくように、技術の進化は人々を結びつけ、新たな可能性を広げていく。AIの力で守りを固める道も、また一つの風景。共に学び、成長する旅が続きますように。
+> 風の中に潜む秘密、GitHubの安全な道筋が静かに築かれています。AIの力を借りて、脆弱性を見つけ出す旅は、知恵の風が導くもの。60百万のコードレビューは、創造の息吹で満ちた空間に響く、調和の旋律のようですね。
 
+- [Under the hood: Security architecture of GitHub Agentic Workflows](https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/) (GitHub Blog)
 - [How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework](https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/) (GitHub Blog)
 - [60 million Copilot code reviews and counting](https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/) (GitHub Blog)
-- [Scaling AI opportunity across the globe: Learnings from GitHub and Andela](https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---

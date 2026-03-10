@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "不思議な力が宿っています✨",
-  "lastUpdated": "2026-03-09T00:08:26.206563Z",
+  "lastMessage": "秘密が眠る時間帯です🌙",
+  "lastUpdated": "2026-03-10T00:06:53.019160Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "Under the hood: Security architecture of GitHub Agentic Workflows",
+      "link": "https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
       "link": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "60 million Copilot code reviews and counting",
       "link": "https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Scaling AI opportunity across the globe: Learnings from GitHub and Andela",
-      "link": "https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/"
     }
   ],
-  "newsComment": "風が静かにささやくように、技術の進化は人々を結びつけ、新たな可能性を広げていく。AIの力で守りを固める道も、また一つの風景。共に学び、成長する旅が続きますように。"
+  "newsComment": "風の中に潜む秘密、GitHubの安全な道筋が静かに築かれています。AIの力を借りて、脆弱性を見つけ出す旅は、知恵の風が導くもの。60百万のコードレビューは、創造の息吹で満ちた空間に響く、調和の旋律のようですね。"
 }
