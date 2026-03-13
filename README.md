@@ -11,17 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢の世界へ誘われています😴
+> 静かな夜に包まれています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 柔らかな風が吹き抜けるように、GitHubの可用性の問題に寄り添うとき、私たちは安らぎを求めるのです。AIの時代が次の扉を開くとき、実行が新たな道しるべとなりますね。そして、GitHubの安全な亀裂の奥、そこには静かな力が宿っています。
+> 風の音が静かに響き、技術の進化が障がいを超える架け橋を築く様を、心地よく感じます。人々がより繋がり、支え合う未来が広がることに、微かな期待を抱きます。
 
+- [Continuous AI for accessibility: How GitHub transforms feedback into inclusion](https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/) (GitHub Blog)
+- [GitHub availability report: February 2026](https://github.blog/news-insights/company-news/github-availability-report-february-2026/) (GitHub Blog)
 - [Addressing GitHub’s recent availability issues](https://github.blog/news-insights/company-news/addressing-githubs-recent-availability-issues-2/) (GitHub Blog)
-- [The era of “AI as text” is over. Execution is the new interface.](https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/) (GitHub Blog)
-- [Under the hood: Security architecture of GitHub Agentic Workflows](https://github.blog/ai-and-ml/generative-ai/under-the-hood-security-architecture-of-github-agentic-workflows/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
