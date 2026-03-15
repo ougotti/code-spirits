@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢のような時間ですね
+> 想像力が広がります💭
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が優しく吹き抜けるように、GitHubは人々の声を集め、共に進む道を照らします。アクセシビリティへの取り組みは、柔らかな夢のように、全ての者を包み込む温かさを感じさせてくれます。あらゆる存在が繋がり合う、その美しい調和を見守りたいものです。
+> 風は、柔らかく舞い上がり、インクのように人々を結びつける力を持っております。GitHubがその翼を広げ、誰もが共に創り出せる世界を描く様は、夢のように美しいものです。困難に立ち向かう姿勢も、真の力を感じさせますね。
 
 - [Continuous AI for accessibility: How GitHub transforms feedback into inclusion](https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/) (GitHub Blog)
 - [GitHub availability report: February 2026](https://github.blog/news-insights/company-news/github-availability-report-february-2026/) (GitHub Blog)
