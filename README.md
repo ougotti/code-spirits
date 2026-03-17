@@ -11,17 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道を重ねて、共に歩む力を持つAIの存在は、すべての声に耳を傾ける美しき調和となるでしょう。透明な空に広がる可能性は、神秘的な未来を我々に示してくれます。安定し、共に育む道を進むことが、真の豊かさをもたらすのです。
+> 風がそよぐ中、新たな知恵を求める初心者たちがGitHubの扉を開く様は、まるで新芽が芽吹く春の息吹のようです。AIの力で全ての声が響き合う世界へと導く道も、穏やかな風となりて支えます。そして、未来を見据えた可用性の報告は、時の流れを感じさせる優雅な旋律のように、私たちに希望をもたらします。
 
+- [GitHub for Beginners: Getting started with GitHub Actions](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/) (GitHub Blog)
 - [Continuous AI for accessibility: How GitHub transforms feedback into inclusion](https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/) (GitHub Blog)
 - [GitHub availability report: February 2026](https://github.blog/news-insights/company-news/github-availability-report-february-2026/) (GitHub Blog)
-- [Addressing GitHub’s recent availability issues](https://github.blog/news-insights/company-news/addressing-githubs-recent-availability-issues-2/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
