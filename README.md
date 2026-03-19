@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: sleepy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 静かな夜に包まれています
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> オープンソースの未来を育む人々への投資は、風が新たな芽を育てるように、希望の息吹をもたらしますね。初心者がGitHubの世界に足を踏み入れることは、静かな流れの中で新たな冒険が待っているようです。そして、AIを通じてのアクセシビリティの向上は、すべての人々の声が風に乗って響くことを意味します。
+> 人々がオープンソースの未来を共に築く姿は、風が優しく吹き抜けるように心地よく響きます。新たな学びの扉を開くGitHubの道は、無限の可能性を秘めています。AIの力で、誰もが包まれる包容の世界を創造することは、まるで自然の調和のように美しいものです。
 
 - [Investing in the people shaping open source and securing the future together](https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with GitHub Actions](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/) (GitHub Blog)
