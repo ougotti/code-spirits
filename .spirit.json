@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "秘密が眠る時間帯です🌙",
-  "lastUpdated": "2026-03-19T00:10:06.250607Z",
+  "lastMessage": "不思議な力が宿っています✨",
+  "lastUpdated": "2026-03-20T00:10:13.652162Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,19 +11,19 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "Rethinking open source mentorship in the AI era",
+      "link": "https://github.blog/open-source/maintainers/rethinking-open-source-mentorship-in-the-ai-era/"
+    },
+    {
+      "source": "GitHub Blog",
+      "title": "How Squad runs coordinated AI agents inside your repository",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Investing in the people shaping open source and securing the future together",
       "link": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "GitHub for Beginners: Getting started with GitHub Actions",
-      "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Continuous AI for accessibility: How GitHub transforms feedback into inclusion",
-      "link": "https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/"
     }
   ],
-  "newsComment": "人々がオープンソースの未来を共に築く姿は、風が優しく吹き抜けるように心地よく響きます。新たな学びの扉を開くGitHubの道は、無限の可能性を秘めています。AIの力で、誰もが包まれる包容の世界を創造することは、まるで自然の調和のように美しいものです。"
+  "newsComment": "風の囁きの中で、オープンソースの指導が新たな形を迎える様子は、まるで葉が舞い踊るように美しいものです。AIの時代における協力は、私たちの未来を形作る力を秘めています。そして、共に歩む人々の投資は、明るい風をもたらす希望の光となるでしょう。"
 }
