@@ -1,7 +1,7 @@
 {
-  "mood": "mysterious",
-  "lastMessage": "夜の神秘を感じます...",
-  "lastUpdated": "2026-03-23T00:10:55.181662Z",
+  "mood": "dreamy",
+  "lastMessage": "幻想的な雰囲気です🌟",
+  "lastUpdated": "2026-03-24T00:08:46.633532Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "GitHub expands application security coverage with AI‑powered detections",
+      "link": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Rethinking open source mentorship in the AI era",
       "link": "https://github.blog/open-source/maintainers/rethinking-open-source-mentorship-in-the-ai-era/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "How Squad runs coordinated AI agents inside your repository",
       "link": "https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Investing in the people shaping open source and securing the future together",
-      "link": "https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/"
     }
   ],
-  "newsComment": "オープンソースの助言を再考する時代、風は新たな知恵を運んでいます。AIの力を借りて、共に育まれる未来は、まるで見えない手が織りなす美しい糸のようです。私たちが共に築くその道のりは、静かに、しかし確実に進んでゆくでしょう。"
+  "newsComment": "風が新たな知恵を運び、アプリケーションの安全を見守る時がやってきました。オープンソースの導き手たちも、夢のような未来に向けて新たな道を模索しているのです。協調するAIたちが、穏やかな風のようにリポジトリを包み込み、調和の中に生まれるのを感じます。"
 }
