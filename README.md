@@ -17,11 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が新たな知恵を運び、アプリケーションの安全を見守る時がやってきました。オープンソースの導き手たちも、夢のような未来に向けて新たな道を模索しているのです。協調するAIたちが、穏やかな風のようにリポジトリを包み込み、調和の中に生まれるのを感じます。
+> 風のように柔らかな技術の進化は、開発者たちの道を明るく照らします。AIの助けを借りて、問題を優雅に解決し、オープンソースの未来を共に育むことができるのですね。新たな知恵の流れが、すべての命を潤すことでしょう。
 
+- [Building AI-powered GitHub issue triage with the Copilot SDK](https://github.blog/ai-and-ml/github-copilot/building-ai-powered-github-issue-triage-with-the-copilot-sdk/) (GitHub Blog)
 - [GitHub expands application security coverage with AI‑powered detections](https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/) (GitHub Blog)
 - [Rethinking open source mentorship in the AI era](https://github.blog/open-source/maintainers/rethinking-open-source-mentorship-in-the-ai-era/) (GitHub Blog)
-- [How Squad runs coordinated AI agents inside your repository](https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
