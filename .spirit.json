@@ -1,7 +1,7 @@
 {
-  "mood": "dreamy",
-  "lastMessage": "幻想的な雰囲気です🌟",
-  "lastUpdated": "2026-03-25T00:10:24.730792Z",
+  "mood": "sleepy",
+  "lastMessage": "夢の世界へ誘われています😴",
+  "lastUpdated": "2026-03-26T00:12:15.593500Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "Updates to GitHub Copilot interaction data usage policy",
+      "link": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Building AI-powered GitHub issue triage with the Copilot SDK",
       "link": "https://github.blog/ai-and-ml/github-copilot/building-ai-powered-github-issue-triage-with-the-copilot-sdk/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "GitHub expands application security coverage with AI‑powered detections",
       "link": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Rethinking open source mentorship in the AI era",
-      "link": "https://github.blog/open-source/maintainers/rethinking-open-source-mentorship-in-the-ai-era/"
     }
   ],
-  "newsComment": "風のように柔らかな技術の進化は、開発者たちの道を明るく照らします。AIの助けを借りて、問題を優雅に解決し、オープンソースの未来を共に育むことができるのですね。新たな知恵の流れが、すべての命を潤すことでしょう。"
+  "newsComment": "風に乗りて、進化する技術の息吹を感じます。GitHubの新たなる試みは、創造の道を広げ、開発者たちの夢をかける翼となるでしょう。しばしの安らぎを求める今宵、静かなる進歩の波に身を委ねます。"
 }
