@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の道を行く者たちへ、セキュリティの道筋は未来の安らぎをもたらす。脆弱性の影は薄れ、オープンソースの光が輝かんことを願う。そして、共同の創造が新たな風を生む。その流れに身を委ねるのだ。
+> 風が運ぶ未来の道筋、GitHub Actionsの安全性に新たな光が差し込みます。オープンソースの脆弱性の潮流は、私たちに警戒を促し、知恵を深める機会を与えます。Copilotの使用方針の更新もまた、共に成長するための風のささやきのように、慎重に受け止めるべきでしょう。
 
 - [What’s coming to our GitHub Actions 2026 security roadmap](https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/) (GitHub Blog)
 - [A year of open source vulnerability trends: CVEs, advisories, and malware](https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/) (GitHub Blog)
