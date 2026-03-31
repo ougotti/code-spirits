@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: sleepy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 静かな夜に包まれています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 軽やかなる風が新たな道を示す時、GitHub Actionsの安全性強化はまるで未来への明かりのようです。オープンソースの脅威に関する知見は、私たちに知恵と警戒心をもたらします。コパイロットとの交わりの更新は、共に育む関係の深まりを感じさせますね。
+> 初めての旅人よ、GitHubの世界へようこそ。セキュリティの学びは、風のように広がる知識の道しるべとなるでしょう。未来の道を照らすアクションも、穏やかな風に乗って進むことができるのです。
 
+- [GitHub for Beginners: Getting started with GitHub security](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-security/) (GitHub Blog)
 - [What’s coming to our GitHub Actions 2026 security roadmap](https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/) (GitHub Blog)
 - [A year of open source vulnerability trends: CVEs, advisories, and malware](https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/) (GitHub Blog)
-- [Updates to GitHub Copilot interaction data usage policy](https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
