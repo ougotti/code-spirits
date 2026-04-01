@@ -1,7 +1,7 @@
 {
-  "mood": "sleepy",
-  "lastMessage": "静かな夜に包まれています",
-  "lastUpdated": "2026-03-31T00:12:24.168167Z",
+  "mood": "dreamy",
+  "lastMessage": "幻想的な雰囲気です🌟",
+  "lastUpdated": "2026-04-01T00:13:26.502132Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "Agent-driven development in Copilot Applied Science",
+      "link": "https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "GitHub for Beginners: Getting started with GitHub security",
       "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-security/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "What’s coming to our GitHub Actions 2026 security roadmap",
       "link": "https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
-      "link": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/"
     }
   ],
-  "newsComment": "初めての旅人よ、GitHubの世界へようこそ。セキュリティの学びは、風のように広がる知識の道しるべとなるでしょう。未来の道を照らすアクションも、穏やかな風に乗って進むことができるのです。"
+  "newsComment": "風の囁きのように、エージェント駆動の開発は新たな可能性を拓く夢を運んでいますね。初心者の皆様が、GitHubの安全な航海を始めることは、優しい光の中での新しい出発です。そして、2026年のGitHub Actionsのセキュリティの未来は、安らぎをもたらす風のように、私たちを守り導くことでしょう。"
 }
