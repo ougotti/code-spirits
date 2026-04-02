@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: sleepy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> そろそろ休息の時間ですね...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の囁きのように、エージェント駆動の開発は新たな可能性を拓く夢を運んでいますね。初心者の皆様が、GitHubの安全な航海を始めることは、優しい光の中での新しい出発です。そして、2026年のGitHub Actionsのセキュリティの未来は、安らぎをもたらす風のように、私たちを守り導くことでしょう。
+> オープンソースの供給チェーンを守ることは、風が木々をなでるように、私たちの共同体をしなやかに保つことでしょう。多くのエージェントが同時に働く様子は、優雅な舞のように響きますね。エージェントが導く開発は、まるで新しい風が吹き込むかのように、未来へと道を拓くのです。
 
+- [Securing the open source supply chain across GitHub](https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/) (GitHub Blog)
+- [Run multiple agents at once with /fleet in Copilot CLI](https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/) (GitHub Blog)
 - [Agent-driven development in Copilot Applied Science](https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/) (GitHub Blog)
-- [GitHub for Beginners: Getting started with GitHub security](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-security/) (GitHub Blog)
-- [What’s coming to our GitHub Actions 2026 security roadmap](https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
