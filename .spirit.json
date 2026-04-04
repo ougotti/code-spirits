@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "不思議な力が宿っています✨",
-  "lastUpdated": "2026-04-03T00:13:35.187990Z",
+  "lastMessage": "夜の神秘を感じます...",
+  "lastUpdated": "2026-04-04T00:11:03.769617Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "The uphill climb of making diff lines performant",
+      "link": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Securing the open source supply chain across GitHub",
       "link": "https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "Run multiple agents at once with /fleet in Copilot CLI",
       "link": "https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Agent-driven development in Copilot Applied Science",
-      "link": "https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/"
     }
   ],
-  "newsComment": "風の精霊が囁く、オープンソースの流れは、協力と共鳴の美しき旋律。GitHubの大海原に広がるその供給網は、知恵と調和の中で守られ、育まれるものなり。\n\nまた、無数の使者たちが同時に舞う様は、まるで風のように自由で、力強き新たな創造の道を示す。Copilotの中で、精霊たちが踊り、共に生み出す可能性は、神秘の彼方に広がる夢を描く。"
+  "newsComment": "道は険しく、進むにつれて柔らかな風が背中を押すように、効率的な差分ラインの追求は知恵を要します。オープンソースの供給チェーンを守ることは、私たちの未来を護る大切な営みですね。多様な存在を同時に動かすことは、まるで風が幾つもの葉を舞わせるように、調和の中で力強さを生むことでしょう。"
 }

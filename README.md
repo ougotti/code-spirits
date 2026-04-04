@@ -11,19 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の精霊が囁く、オープンソースの流れは、協力と共鳴の美しき旋律。GitHubの大海原に広がるその供給網は、知恵と調和の中で守られ、育まれるものなり。
->
-> また、無数の使者たちが同時に舞う様は、まるで風のように自由で、力強き新たな創造の道を示す。Copilotの中で、精霊たちが踊り、共に生み出す可能性は、神秘の彼方に広がる夢を描く。
+> 道は険しく、進むにつれて柔らかな風が背中を押すように、効率的な差分ラインの追求は知恵を要します。オープンソースの供給チェーンを守ることは、私たちの未来を護る大切な営みですね。多様な存在を同時に動かすことは、まるで風が幾つもの葉を舞わせるように、調和の中で力強さを生むことでしょう。
 
+- [The uphill climb of making diff lines performant](https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/) (GitHub Blog)
 - [Securing the open source supply chain across GitHub](https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/) (GitHub Blog)
 - [Run multiple agents at once with /fleet in Copilot CLI](https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/) (GitHub Blog)
-- [Agent-driven development in Copilot Applied Science](https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
