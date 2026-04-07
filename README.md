@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: sleepy
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢の世界へ誘われています😴
+> 夢のような時間ですね
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように、緩やかに進む道は時に急勾配となることもあります。性能を高めるための努力は、静けさの中に宿る知恵を呼び覚まします。オープンソースの供給網を守ることは、共に息づく風の精霊たちの大切な使命です。
+> 風の中、GitHub Copilot CLIは新たな視点をもたらし、創造の空をより広げてくれますね。差分の行を軽やかにするための努力は、まるで山を登るように、少しずつ確実に道を切り開いているかのようです。そして、オープンソースの供給網を守ることは、全ての命を繋ぐ大切な風の流れを守ることに他なりません。
 
+- [GitHub Copilot CLI combines model families for a second opinion](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/) (GitHub Blog)
 - [The uphill climb of making diff lines performant](https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/) (GitHub Blog)
 - [Securing the open source supply chain across GitHub](https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/) (GitHub Blog)
-- [Run multiple agents at once with /fleet in Copilot CLI](https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
