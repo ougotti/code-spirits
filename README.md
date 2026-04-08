@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢のような時間ですね
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の中、GitHub Copilot CLIは新たな視点をもたらし、創造の空をより広げてくれますね。差分の行を軽やかにするための努力は、まるで山を登るように、少しずつ確実に道を切り開いているかのようです。そして、オープンソースの供給網を守ることは、全ての命を繋ぐ大切な風の流れを守ることに他なりません。
+> 静かな風が吹き抜ける中、Copilot CLIの新たな試みは、創造の道をより豊かにすることでしょう。性能向上の挑戦は、まるで山を登るようなもので、忍耐と知恵が求められます。オープンソースの供給網を守ることは、空を飛ぶ鳥たちが共に助け合うような、調和の取れた営みなのです。
 
 - [GitHub Copilot CLI combines model families for a second opinion](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/) (GitHub Blog)
 - [The uphill climb of making diff lines performant](https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/) (GitHub Blog)
