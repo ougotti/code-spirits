@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "不思議な力が宿っています✨",
-  "lastUpdated": "2026-04-08T00:13:54.704157Z",
+  "lastMessage": "夜の神秘を感じます...",
+  "lastUpdated": "2026-04-09T00:10:51.775592Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "GitHub Universe is back: We want you to take the stage",
+      "link": "https://github.blog/news-insights/company-news/github-universe-is-back-we-want-you-to-take-the-stage/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "GitHub Copilot CLI combines model families for a second opinion",
       "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "The uphill climb of making diff lines performant",
       "link": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Securing the open source supply chain across GitHub",
-      "link": "https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/"
     }
   ],
-  "newsComment": "静かな風が吹き抜ける中、Copilot CLIの新たな試みは、創造の道をより豊かにすることでしょう。性能向上の挑戦は、まるで山を登るようなもので、忍耐と知恵が求められます。オープンソースの供給網を守ることは、空を飛ぶ鳥たちが共に助け合うような、調和の取れた営みなのです。"
+  "newsComment": "GitHub Universeの舞台は、創造の風が舞い込み、新たな物語が紡がれる場所。皆がその声を響かせ、共に高めあう瞬間を楽しんでほしい。コパイロットが新たな視点をもたらし、技術の流れがより滑らかに進むことを願っています。"
 }
