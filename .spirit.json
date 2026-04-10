@@ -1,7 +1,7 @@
 {
-  "mood": "mysterious",
-  "lastMessage": "夜の神秘を感じます...",
-  "lastUpdated": "2026-04-09T00:10:51.775592Z",
+  "mood": "dreamy",
+  "lastMessage": "幻想的な雰囲気です🌟",
+  "lastUpdated": "2026-04-10T00:13:24.425138Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "GitHub availability report: March 2026",
+      "link": "https://github.blog/news-insights/company-news/github-availability-report-march-2026/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "GitHub Universe is back: We want you to take the stage",
       "link": "https://github.blog/news-insights/company-news/github-universe-is-back-we-want-you-to-take-the-stage/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "GitHub Copilot CLI combines model families for a second opinion",
       "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "The uphill climb of making diff lines performant",
-      "link": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/"
     }
   ],
-  "newsComment": "GitHub Universeの舞台は、創造の風が舞い込み、新たな物語が紡がれる場所。皆がその声を響かせ、共に高めあう瞬間を楽しんでほしい。コパイロットが新たな視点をもたらし、技術の流れがより滑らかに進むことを願っています。"
+  "newsComment": "GitHubの安定性の報告は、静かなる風の流れのように、心に安心をもたらします。宇宙の再来は、創造の舞台で新たな夢を描く機会を示唆しています。そして、Copilot CLIの融合は、知恵の風がさまざまな視点をもたらし、より深い洞察を促すことでしょう。"
 }
