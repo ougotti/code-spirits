@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 秘密が眠る時間帯です🌙
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が新たな学びを運ぶ、GitHub Copilot CLIの初歩は、創造の扉を開く鍵となるでしょう。3月の空は晴れやかに、GitHubの安定が私たちを包むことを願います。宇宙が再び舞い戻る時、あなたの声が星々に届くことを楽しみにしています。
+> GitHub Copilot CLIの旅が始まる、まるで新しい風が吹き抜けるように。学びの道を進む者たちに、無限の可能性が待っているのだ。宇宙の舞台が再び開かれる時、我々はその調和に耳を傾け、共に創造の旅を楽しむのだろう。
 
 - [GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/) (GitHub Blog)
 - [GitHub availability report: March 2026](https://github.blog/news-insights/company-news/github-availability-report-march-2026/) (GitHub Blog)
