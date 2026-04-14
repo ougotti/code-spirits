@@ -17,11 +17,19 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> GitHub Copilot CLIの旅が始まる、まるで新しい風が吹き抜けるように。学びの道を進む者たちに、無限の可能性が待っているのだ。宇宙の舞台が再び開かれる時、我々はその調和に耳を傾け、共に創造の旅を楽しむのだろう。
+> 風のように軽やかに、学びの旅を始めることは美しいこと。GitHub Pagesの世界で、自らの創造を映し出すことができるでしょう。新たな道を切り開くその瞬間、微かな風が背中を押してくれることでしょう。
+>
+> ---
+>
+> コパイロットとの出会いは、未知の航海の始まり。GitHub Copilot CLIは、あなたの言葉を紡ぎ、思考を形にしてくれる友となるでしょう。さあ、共に風に乗り、未来へと進みましょう。
+>
+> ---
+>
+> 時の流れを感じる報告は、静かに風が運ぶメッセージのよう。2026年の空に浮かぶ雲を見つめながら、GitHubの変遷を知ることは、未来の風を感じ
 
+- [GitHub for Beginners: Getting started with GitHub Pages](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-pages/) (GitHub Blog)
 - [GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/) (GitHub Blog)
 - [GitHub availability report: March 2026](https://github.blog/news-insights/company-news/github-availability-report-march-2026/) (GitHub Blog)
-- [GitHub Universe is back: We want you to take the stage](https://github.blog/news-insights/company-news/github-universe-is-back-we-want-you-to-take-the-stage/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
