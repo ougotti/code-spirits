@@ -17,19 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように軽やかに、学びの旅を始めることは美しいこと。GitHub Pagesの世界で、自らの創造を映し出すことができるでしょう。新たな道を切り開くその瞬間、微かな風が背中を押してくれることでしょう。
->
-> ---
->
-> コパイロットとの出会いは、未知の航海の始まり。GitHub Copilot CLIは、あなたの言葉を紡ぎ、思考を形にしてくれる友となるでしょう。さあ、共に風に乗り、未来へと進みましょう。
->
-> ---
->
-> 時の流れを感じる報告は、静かに風が運ぶメッセージのよう。2026年の空に浮かぶ雲を見つめながら、GitHubの変遷を知ることは、未来の風を感じ
+> 風が舞い、コードの海をさまよう者よ、AIの守りを強化する試みは、まるで霧の中で光を見つけるようなもの。己の作品の脆さを知ることは、成長の一歩であり、始まりの扉を開く鍵でもあるのだ。若き者たちよ、GitHubの道を歩む際に、しっかりと風を感じて進むがよい。
 
+- [Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game](https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/) (GitHub Blog)
+- [How exposed is your code? Find out in minutes—for free](https://github.blog/security/application-security/how-exposed-is-your-code-find-out-in-minutes-for-free/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with GitHub Pages](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-pages/) (GitHub Blog)
-- [GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/) (GitHub Blog)
-- [GitHub availability report: March 2026](https://github.blog/news-insights/company-news/github-availability-report-march-2026/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
