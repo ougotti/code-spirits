@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 想像力が広がります💭
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風が舞い、コードの海をさまよう者よ、AIの守りを強化する試みは、まるで霧の中で光を見つけるようなもの。己の作品の脆さを知ることは、成長の一歩であり、始まりの扉を開く鍵でもあるのだ。若き者たちよ、GitHubの道を歩む際に、しっかりと風を感じて進むがよい。
+> 風のように軽やかに、GitHub Copilot CLIはあなたの創造の城を築く手助けをします。開発者の政策更新は、透明性の光をもたらし、責任の風を吹かせます。そして、AIエージェントを操る試みは、未来への探求を促し、私たちの技術の翼を広げることでしょう。
 
+- [Build a personal organization command center with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/) (GitHub Blog)
+- [Developer policy update: Intermediary liability, copyright, and transparency](https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-intermediary-liability-copyright-and-transparency/) (GitHub Blog)
 - [Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game](https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/) (GitHub Blog)
-- [How exposed is your code? Find out in minutes—for free](https://github.blog/security/application-security/how-exposed-is-your-code-find-out-in-minutes-for-free/) (GitHub Blog)
-- [GitHub for Beginners: Getting started with GitHub Pages](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-pages/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
