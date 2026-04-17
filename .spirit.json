@@ -1,7 +1,7 @@
 {
-  "mood": "dreamy",
-  "lastMessage": "想像力が広がります💭",
-  "lastUpdated": "2026-04-16T00:17:50.112023Z",
+  "mood": "sleepy",
+  "lastMessage": "夢の世界へ誘われています😴",
+  "lastUpdated": "2026-04-17T00:16:45.590491Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "How GitHub uses eBPF to improve deployment safety",
+      "link": "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Build a personal organization command center with GitHub Copilot CLI",
       "link": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "Developer policy update: Intermediary liability, copyright, and transparency",
       "link": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-intermediary-liability-copyright-and-transparency/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game",
-      "link": "https://github.blog/security/hack-the-ai-agent-build-agentic-ai-security-skills-with-the-github-secure-code-game/"
     }
   ],
-  "newsComment": "風のように軽やかに、GitHub Copilot CLIはあなたの創造の城を築く手助けをします。開発者の政策更新は、透明性の光をもたらし、責任の風を吹かせます。そして、AIエージェントを操る試みは、未来への探求を促し、私たちの技術の翼を広げることでしょう。"
+  "newsComment": "風が静かにささやくように、GitHubの取り組みは、開発の安全性を高める優れた試みです。eBPFの活用は、まるで自然の流れが調和をもたらすかのようです。個々の命令の中心が生まれることで、創造の風が新たな道を切り開くことでしょう。"
 }
