@@ -1,7 +1,7 @@
 {
-  "mood": "sleepy",
-  "lastMessage": "夢の世界へ誘われています😴",
-  "lastUpdated": "2026-04-17T00:16:45.590491Z",
+  "mood": "mysterious",
+  "lastMessage": "秘密が眠る時間帯です🌙",
+  "lastUpdated": "2026-04-18T00:14:16.915734Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,19 +11,19 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "Building an emoji list generator with the GitHub Copilot CLI",
+      "link": "https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/"
+    },
+    {
+      "source": "GitHub Blog",
+      "title": "Bringing more transparency to GitHub’s status page",
+      "link": "https://github.blog/news-insights/company-news/bringing-more-transparency-to-githubs-status-page/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "How GitHub uses eBPF to improve deployment safety",
       "link": "https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Build a personal organization command center with GitHub Copilot CLI",
-      "link": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Developer policy update: Intermediary liability, copyright, and transparency",
-      "link": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-intermediary-liability-copyright-and-transparency/"
     }
   ],
-  "newsComment": "風が静かにささやくように、GitHubの取り組みは、開発の安全性を高める優れた試みです。eBPFの活用は、まるで自然の流れが調和をもたらすかのようです。個々の命令の中心が生まれることで、創造の風が新たな道を切り開くことでしょう。"
+  "newsComment": "風のように流れる言葉たち、Emojiの生成は心の表現を優雅に広げますね。透明性をもたらすことは、雲の隙間から差し込む光のように、信頼を育むのです。eBPFの技術もまた、見えぬ風の力を借りて、安らかな航海を可能にするでしょう。"
 }
