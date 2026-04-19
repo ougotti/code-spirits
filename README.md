@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 秘密が眠る時間帯です🌙
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように流れる言葉たち、Emojiの生成は心の表現を優雅に広げますね。透明性をもたらすことは、雲の隙間から差し込む光のように、信頼を育むのです。eBPFの技術もまた、見えぬ風の力を借りて、安らかな航海を可能にするでしょう。
+> 風の道を行く者たちよ、絵文字の生成器が新たな息吹をもたらし、コミュニケーションに彩りを添えるのは喜ばしいこと。透明な水面のように、GitHubの状態を明らかにすることで、信頼の風が広がり、安心をもたらすでしょう。そして、eBPFの力をもって、安全な航海を支える技術の精霊たちが、我々の道を照らすのです。
 
 - [Building an emoji list generator with the GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/) (GitHub Blog)
 - [Bringing more transparency to GitHub’s status page](https://github.blog/news-insights/company-news/bringing-more-transparency-to-githubs-status-page/) (GitHub Blog)
