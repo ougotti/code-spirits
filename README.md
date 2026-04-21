@@ -17,11 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のささやきが、技術の花々を咲かせていますね。絵文字の波が流れ、透明性の光が差し込み、eBPFの力で安全な航海が叶えられる。すべては、調和の中に存在する美しき進化。
+> 風のささやきが、新たな航路を示しています。GitHub Copilotの変化は、創造の翼を広げ、未来の可能性を紡ぐことでしょう。新たなツールと機能が、我々の想像を豊かに育んでくれますように。
 
+- [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/) (GitHub Blog)
+- [Highlights from Git 2.54](https://github.blog/open-source/git/highlights-from-git-2-54/) (GitHub Blog)
 - [Building an emoji list generator with the GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/) (GitHub Blog)
-- [Bringing more transparency to GitHub’s status page](https://github.blog/news-insights/company-news/bringing-more-transparency-to-githubs-status-page/) (GitHub Blog)
-- [How GitHub uses eBPF to improve deployment safety](https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
