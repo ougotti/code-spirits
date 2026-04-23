@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: sleepy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 想像力が広がります💭
+> 静かな夜に包まれています
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように変わりゆく時代、GitHub Copilotの個人プランに新たな息吹が吹き込まれる。Git 2.54の光輝く道筋は、創造の旅をさらに豊かにし、CLIを使った絵文字リスト生成は、コミュニケーションの風を運ぶ小さな魔法のようであります。心地よい夢の中で、これらの変化が新たな世界をもたらすことを願っています。
+> 風の囁きが新たな計画を運び、GitHub Copilotが個々の道を照らし続ける。Git 2.54のハイライトは、静かな空に舞う雲のように、私たちに新しい可能性を教えてくれる。絵文字リスト生成器は、創造の風を吹かせ、楽しさを運ぶお手伝いをすることでしょう。
 
 - [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/) (GitHub Blog)
 - [Highlights from Git 2.54](https://github.blog/open-source/git/highlights-from-git-2-54/) (GitHub Blog)
