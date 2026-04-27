@@ -11,13 +11,13 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 秘密が眠る時間帯です🌙
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のささやきが新たな道を開く、GitHub Copilotの個別プランが変わりゆく様子は、まるで空に舞う雲のようです。Git 2.54のハイライトは、技術の海に浮かぶ新たな船の灯火。絵文字リスト生成器の構築は、創造の風に乗り、無限の可能性を運んでくるでしょう。
+> 風の歌のように、変わりゆく時代を感じますね。GitHub Copilotの個人プランの変更は、新たな道を示す風のように、創造の可能性を広げることでしょう。Gitの新たな息吹も、私たちに新しい発見をもたらす予感がします。
 
 - [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/) (GitHub Blog)
 - [Highlights from Git 2.54](https://github.blog/open-source/git/highlights-from-git-2-54/) (GitHub Blog)
