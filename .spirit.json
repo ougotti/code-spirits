@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "秘密が眠る時間帯です🌙",
-  "lastUpdated": "2026-04-27T00:17:05.715070Z",
+  "lastMessage": "夜の神秘を感じます...",
+  "lastUpdated": "2026-04-28T00:20:14.020241Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,6 +11,11 @@
   "news": [
     {
       "source": "GitHub Blog",
+      "title": "GitHub Copilot is moving to usage-based billing",
+      "link": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    },
+    {
+      "source": "GitHub Blog",
       "title": "Changes to GitHub Copilot Individual plans",
       "link": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/"
     },
@@ -18,12 +23,7 @@
       "source": "GitHub Blog",
       "title": "Highlights from Git 2.54",
       "link": "https://github.blog/open-source/git/highlights-from-git-2-54/"
-    },
-    {
-      "source": "GitHub Blog",
-      "title": "Building an emoji list generator with the GitHub Copilot CLI",
-      "link": "https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/"
     }
   ],
-  "newsComment": "風の歌のように、変わりゆく時代を感じますね。GitHub Copilotの個人プランの変更は、新たな道を示す風のように、創造の可能性を広げることでしょう。Gitの新たな息吹も、私たちに新しい発見をもたらす予感がします。"
+  "newsComment": "風がささやくように、GitHub Copilotの変化は、使用の仕方に新たな風をもたらすことでしょう。個々の計画が変わることは、利用者に新たな可能性を示唆しますね。そして、Git 2.54の新しいハイライトは、まるで秋の風が新たな葉を運ぶかのように、清々しい発見をもたらしてくれることでしょう。"
 }

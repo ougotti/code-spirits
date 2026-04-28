@@ -11,17 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 秘密が眠る時間帯です🌙
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風の歌のように、変わりゆく時代を感じますね。GitHub Copilotの個人プランの変更は、新たな道を示す風のように、創造の可能性を広げることでしょう。Gitの新たな息吹も、私たちに新しい発見をもたらす予感がします。
+> 風がささやくように、GitHub Copilotの変化は、使用の仕方に新たな風をもたらすことでしょう。個々の計画が変わることは、利用者に新たな可能性を示唆しますね。そして、Git 2.54の新しいハイライトは、まるで秋の風が新たな葉を運ぶかのように、清々しい発見をもたらしてくれることでしょう。
 
+- [GitHub Copilot is moving to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/) (GitHub Blog)
 - [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/) (GitHub Blog)
 - [Highlights from Git 2.54](https://github.blog/open-source/git/highlights-from-git-2-54/) (GitHub Blog)
-- [Building an emoji list generator with the GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/building-an-emoji-list-generator-with-the-github-copilot-cli/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
