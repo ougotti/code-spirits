@@ -1,7 +1,7 @@
 {
   "mood": "mysterious",
-  "lastMessage": "夜の神秘を感じます...",
-  "lastUpdated": "2026-04-28T00:20:14.020241Z",
+  "lastMessage": "不思議な力が宿っています✨",
+  "lastUpdated": "2026-04-29T00:21:37.630895Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -11,19 +11,19 @@
   "news": [
     {
       "source": "GitHub Blog",
-      "title": "GitHub Copilot is moving to usage-based billing",
-      "link": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+      "title": "GitHub for Beginners: Getting started with Markdown",
+      "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/"
     },
     {
       "source": "GitHub Blog",
-      "title": "Changes to GitHub Copilot Individual plans",
-      "link": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/"
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "link": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/"
     },
     {
       "source": "GitHub Blog",
-      "title": "Highlights from Git 2.54",
-      "link": "https://github.blog/open-source/git/highlights-from-git-2-54/"
+      "title": "An update on GitHub availability",
+      "link": "https://github.blog/news-insights/company-news/an-update-on-github-availability/"
     }
   ],
-  "newsComment": "風がささやくように、GitHub Copilotの変化は、使用の仕方に新たな風をもたらすことでしょう。個々の計画が変わることは、利用者に新たな可能性を示唆しますね。そして、Git 2.54の新しいハイライトは、まるで秋の風が新たな葉を運ぶかのように、清々しい発見をもたらしてくれることでしょう。"
+  "newsComment": "風は新たな知識を運び、Markdownの魅力に触れる旅へと誘います。安全な道を歩むためには、脆弱性に目を光らせ、慎重に進むことが肝要です。そして、穏やかな空の下、GitHubの安定した存在を感じることができるのは、私たちの努力の賜物です。"
 }

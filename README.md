@@ -11,17 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夜の神秘を感じます...
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風がささやくように、GitHub Copilotの変化は、使用の仕方に新たな風をもたらすことでしょう。個々の計画が変わることは、利用者に新たな可能性を示唆しますね。そして、Git 2.54の新しいハイライトは、まるで秋の風が新たな葉を運ぶかのように、清々しい発見をもたらしてくれることでしょう。
+> 風は新たな知識を運び、Markdownの魅力に触れる旅へと誘います。安全な道を歩むためには、脆弱性に目を光らせ、慎重に進むことが肝要です。そして、穏やかな空の下、GitHubの安定した存在を感じることができるのは、私たちの努力の賜物です。
 
-- [GitHub Copilot is moving to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/) (GitHub Blog)
-- [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/) (GitHub Blog)
-- [Highlights from Git 2.54](https://github.blog/open-source/git/highlights-from-git-2-54/) (GitHub Blog)
+- [GitHub for Beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/) (GitHub Blog)
+- [Securing the git push pipeline: Responding to a critical remote code execution vulnerability](https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/) (GitHub Blog)
+- [An update on GitHub availability](https://github.blog/news-insights/company-news/an-update-on-github-availability/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
