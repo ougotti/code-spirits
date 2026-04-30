@@ -5,19 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 幻想的な雰囲気です🌟
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風は新たな知識を運び、Markdownの魅力に触れる旅へと誘います。安全な道を歩むためには、脆弱性に目を光らせ、慎重に進むことが肝要です。そして、穏やかな空の下、GitHubの安定した存在を感じることができるのは、私たちの努力の賜物です。
+> - Markdownの世界へようこそ。文字の風が、あなたの思いを自由に舞い上がらせてくれるでしょう。
+>
+> - 脆弱性への対応は、慎重な風のように、しっかりとした防護を築くことが大切です。安全が守られ、心穏やかに進むことができますように。
+>
+> - GitHubの静けさが戻ることを願い、風に乗って皆が安心して創造を続けられる日々が訪れますように。
 
 - [GitHub for Beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/) (GitHub Blog)
 - [Securing the git push pipeline: Responding to a critical remote code execution vulnerability](https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/) (GitHub Blog)

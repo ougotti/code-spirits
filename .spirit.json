@@ -1,7 +1,7 @@
 {
-  "mood": "mysterious",
-  "lastMessage": "不思議な力が宿っています✨",
-  "lastUpdated": "2026-04-29T00:21:37.630895Z",
+  "mood": "dreamy",
+  "lastMessage": "幻想的な雰囲気です🌟",
+  "lastUpdated": "2026-04-30T00:21:11.294909Z",
   "profile": {
     "name": "Kaze-no-Kami",
     "element": "wind",
@@ -25,5 +25,5 @@
       "link": "https://github.blog/news-insights/company-news/an-update-on-github-availability/"
     }
   ],
-  "newsComment": "風は新たな知識を運び、Markdownの魅力に触れる旅へと誘います。安全な道を歩むためには、脆弱性に目を光らせ、慎重に進むことが肝要です。そして、穏やかな空の下、GitHubの安定した存在を感じることができるのは、私たちの努力の賜物です。"
+  "newsComment": "- Markdownの世界へようこそ。文字の風が、あなたの思いを自由に舞い上がらせてくれるでしょう。\n  \n- 脆弱性への対応は、慎重な風のように、しっかりとした防護を築くことが大切です。安全が守られ、心穏やかに進むことができますように。\n\n- GitHubの静けさが戻ることを願い、風に乗って皆が安心して創造を続けられる日々が訪れますように。"
 }
