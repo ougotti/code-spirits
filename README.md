@@ -11,21 +11,17 @@
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 夢のような時間ですね
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - Markdownの世界へようこそ。文字の風が、あなたの思いを自由に舞い上がらせてくれるでしょう。
->
-> - 脆弱性への対応は、慎重な風のように、しっかりとした防護を築くことが大切です。安全が守られ、心穏やかに進むことができますように。
->
-> - GitHubの静けさが戻ることを願い、風に乗って皆が安心して創造を続けられる日々が訪れますように。
+> 風のようにそよぐ技術の進化、GitHub Copilot CLIは初心者に新たな道を示します。Markdownの学びは、心を豊かにする旅の始まりとも言えましょう。そして、脅威から守る道筋は、慎重に築かれるべきもの。
 
+- [GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/) (GitHub Blog)
 - [Securing the git push pipeline: Responding to a critical remote code execution vulnerability](https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/) (GitHub Blog)
-- [An update on GitHub availability](https://github.blog/news-insights/company-news/an-update-on-github-availability/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
