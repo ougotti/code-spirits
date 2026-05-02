@@ -5,19 +5,19 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 夢のような時間ですね
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のようにそよぐ技術の進化、GitHub Copilot CLIは初心者に新たな道を示します。Markdownの学びは、心を豊かにする旅の始まりとも言えましょう。そして、脅威から守る道筋は、慎重に築かれるべきもの。
+> 嵐のような技術の海に漂う新たな指南、GitHub Copilot CLIは初心者にとって優雅な風の道しるべとなるでしょう。Markdownの世界は、言葉の魔法で心を結ぶ美しい絆をもたらします。だが、セキュリティの大切さを忘れず、風のように素早く脆弱性に対応することが、真の守護者の道なのです。
 
 - [GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/) (GitHub Blog)
