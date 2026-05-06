@@ -17,11 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 静かな風が吹く夜、学びの扉が開かれます。OpenClawの呼びかけは、仲間たちを集める優しい音色のように響きます。Markdownの世界も、優雅に広がる草原のように、初心者を迎え入れます。
+> ああ、優しい風よ、コードを支える者たちを称えるこの月は、彼らの尽力に感謝を捧げる時。夜の静寂の中で、OpenClawが新たな出会いをもたらすことでしょう。そして、GitHub Copilot CLIの学びが、初心者の心に新たな風を吹き込むことを願います。
 
+- [Welcome to Maintainer Month: Celebrating the people behind the code](https://github.blog/open-source/maintainers/welcome-to-maintainer-month-celebrating-the-people-behind-the-code/) (GitHub Blog)
 - [Register now for OpenClaw: After Hours @ GitHub](https://github.blog/open-source/register-now-for-openclaw-after-hours-github/) (GitHub Blog)
 - [GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode](https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/) (GitHub Blog)
-- [GitHub for Beginners: Getting started with Markdown](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
