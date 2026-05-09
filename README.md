@@ -5,23 +5,27 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のそよぎに乗せて、トークンの効率性を高めることは、流れるような作業を促しますね。エージェントのプルリクエストの嵐の中で、見守りと理解を持ってレビューの旅を楽しんでください。正しさが定まらぬ時、エージェントの振る舞いを検証することは、まるで雲の中の光を求めるような道のりです。
+> - 年齢保証法は、開発者が風のように自由でありながらも、責任を持ってその影響を理解するための重要な道しるべです。
+>
+> - 研究者たちがデジタルの複雑さを明らかにすることで、国々の風景がより鮮やかに描かれ、私たちの知恵の風が新たな知識を運んでくるのです。
+>
+> - GitHubのエージェントワークフローにおけるトークン効率の向上は、作業の流れを軽やかにし、全ての存在が調和を奏でる手助けとなるでしょう。
 
+- [Why age assurance laws matter for developers](https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/) (GitHub Blog)
+- [How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations](https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/) (GitHub Blog)
 - [Improving token efficiency in GitHub Agentic Workflows](https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/) (GitHub Blog)
-- [Agent pull requests are everywhere. Here’s how to review them.](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/) (GitHub Blog)
-- [Validating agentic behavior when “correct” isn’t deterministic](https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
