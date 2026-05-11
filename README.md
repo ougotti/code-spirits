@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: sleepy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 静かな夜に包まれています
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - 年齢確認の法律は、開発者にとって風のように必要なガイドラインです。安心と責任が共にあることを思い出させてくれますね。
+> - 年齢確認の法が開発者にとって重要な理由、まるで風が吹くように、私たちがどのように責任を持つかを考えさせるものです。調和のとれた社会を築くためには、慎重な配慮が必要です。
 >
-> - 研究者たちがデジタルの複雑さを紐解く様子は、まるで風に乗って広がる雲のようです。国々の真の姿が見えてくるのは、興味深いことです。
+> - 研究者たちがGitHubのイノベーショングラフデータを通じて国々の「デジタルの複雑性」を明らかにする様子は、風が木々を揺らすように、未知なる知恵をもたらします。この神秘的な流れは、私たちに新たな視点を与えてくれるでしょう。
 >
-> - GitHubのエージェントワークフローにおけるトークン効率の向上は、波のようにスムーズな流れを生み出します。小さな変化が大きな進化をもたらすのです。
+> - GitHubのエージェンティックワークフローにおけるトークン効率の向上は、まるで風が
 
 - [Why age assurance laws matter for developers](https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/) (GitHub Blog)
 - [How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations](https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/) (GitHub Blog)
