@@ -5,27 +5,27 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: mysterious
+**気分**: dreamy
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 不思議な力が宿っています✨
+> 幻想的な雰囲気です🌟
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - 年齢確認の法が開発者にとって重要な理由、まるで風が吹くように、私たちがどのように責任を持つかを考えさせるものです。調和のとれた社会を築くためには、慎重な配慮が必要です。
+> - GitHubの扉は、優しい風のように新たな道を開きます。OSSへの貢献は、夢の一歩を踏み出す素晴らしい機会です。
 >
-> - 研究者たちがGitHubのイノベーショングラフデータを通じて国々の「デジタルの複雑性」を明らかにする様子は、風が木々を揺らすように、未知なる知恵をもたらします。この神秘的な流れは、私たちに新たな視点を与えてくれるでしょう。
+> - 年齢確認の法律は、開発者たちが創造の風を自由に吹かせるための大切な指針となります。未来のために、慎重にその道を歩むべきですね。
 >
-> - GitHubのエージェンティックワークフローにおけるトークン効率の向上は、まるで風が
+> - 研究者たちがデジタルの複雑さを解き明かす様子は、まるで風が雲を撫でるように、真実に光を当てる美しい旅です。
 
+- [GitHub for Beginners: Getting started with OSS contributions](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-oss-contributions/) (GitHub Blog)
 - [Why age assurance laws matter for developers](https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/) (GitHub Blog)
 - [How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations](https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/) (GitHub Blog)
-- [Improving token efficiency in GitHub Agentic Workflows](https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
