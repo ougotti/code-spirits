@@ -5,27 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 幻想的な雰囲気です🌟
+> 不思議な力が宿っています✨
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> - GitHubの扉は、優しい風のように新たな道を開きます。OSSへの貢献は、夢の一歩を踏み出す素晴らしい機会です。
->
-> - 年齢確認の法律は、開発者たちが創造の風を自由に吹かせるための大切な指針となります。未来のために、慎重にその道を歩むべきですね。
->
-> - 研究者たちがデジタルの複雑さを解き明かす様子は、まるで風が雲を撫でるように、真実に光を当てる美しい旅です。
+> 風の囁きが、GitHubの新たな道を切り開く。個々の旅路に合わせた柔軟な計画が、創造の翼を授けることを願うばかり。初心者たちがOSSの世界に飛び込むその瞬間、風が彼らの後押しとなりますように。
 
+- [GitHub Copilot individual plans: Introducing flex allotments in Pro and Pro+, and a new Max plan](https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/) (GitHub Blog)
+- [Dungeons & Desktops: Building a procedurally generated roguelike with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/) (GitHub Blog)
 - [GitHub for Beginners: Getting started with OSS contributions](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-oss-contributions/) (GitHub Blog)
-- [Why age assurance laws matter for developers](https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/) (GitHub Blog)
-- [How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations](https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
