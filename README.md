@@ -5,23 +5,23 @@
 ## 精霊の現在の状態
 
 <!-- SPIRIT_STATUS_START -->
-**気分**: dreamy
+**気分**: mysterious
 <!-- SPIRIT_STATUS_END -->
 
 ## 精霊の言葉
 
 <!-- SPIRIT_LOG_START -->
-> 想像力が広がります💭
+> 夜の神秘を感じます...
 <!-- SPIRIT_LOG_END -->
 
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 時の流れに逆らう、愛されしゲームたちの物語よ、風に乗りて語り継がれる。技術の翼を借りて、新たな冒険が生まれ、創造の海へと旅立つ様は、まるで夢の中の幻想のようです。
+> 風の流れの中、GitHubの可用性報告は開発の息吹を感じさせる。時の経過とともに変化するもの、そして変わらぬものがあることを教えてくれる。コミュニティの力強さもまた、風に乗る種のように、いつまでも続くのだろう。
 
+- [GitHub availability report: April 2026](https://github.blog/news-insights/company-news/github-availability-report-april-2026/) (GitHub Blog)
+- [From latency to instant: Modernizing GitHub Issues navigation performance](https://github.blog/engineering/architecture-optimization/from-latency-to-instant-modernizing-github-issues-navigation-performance/) (GitHub Blog)
 - [Dungeons & Desktops: 10 roguelikes that never die (because their communities won’t let them)](https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/) (GitHub Blog)
-- [GitHub Copilot individual plans: Introducing flex allotments in Pro and Pro+, and a new Max plan](https://github.blog/news-insights/company-news/github-copilot-individual-plans-introducing-flex-allotments-in-pro-and-pro-and-a-new-max-plan/) (GitHub Blog)
-- [Dungeons & Desktops: Building a procedurally generated roguelike with GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
