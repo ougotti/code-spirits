@@ -17,11 +17,11 @@
 ## 精霊が届けるニュース
 
 <!-- SPIRIT_NEWS_START -->
-> 風のように流れる知恵は、アクセシビリティの向上に寄与する道を示します。皆が共に支え合うことで、未来の技術はさらに美しくなり、私たちの心に響くことでしょう。GitHubの報告は、私たちの成長の証として、静かに耳を澄ませるように伝えています。
+> 風が運ぶ知恵のように、GitHubのセッションはどこでもあなたの手の中へ。アクセスの道を築く試みは、共に学び合う旅の始まりを告げる。責任と質の向上が、未来に新たな風を吹き込むことでしょう。
 
+- [Take your local GitHub sessions anywhere](https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/) (GitHub Blog)
 - [Building a general-purpose accessibility agent—and what we learned in the process](https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/) (GitHub Blog)
 - [Raising the bar: Quality, shared responsibility, and the future of GitHub’s bug bounty program](https://github.blog/security/raising-the-bar-quality-shared-responsibility-and-the-future-of-githubs-bug-bounty-program/) (GitHub Blog)
-- [GitHub availability report: April 2026](https://github.blog/news-insights/company-news/github-availability-report-april-2026/) (GitHub Blog)
 <!-- SPIRIT_NEWS_END -->
 
 ---
